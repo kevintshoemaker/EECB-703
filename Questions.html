@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>EECB 703 Readings and Questions</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EECB 703</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="Syllabus.pdf">Syllabus</a>
+</li>
+<li>
+  <a href="Calendar.html">Calendar</a>
+</li>
+<li>
+  <a href="https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing">Readings/Questions</a>
+</li>
+<li>
+  <a href="https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing">Study Guide</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Overview Lectures
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="INTRO.html">Introduction to EECB 703</a>
+    </li>
+    <li>
+      <a href="LECTURE1.html">Behavioral Ecology</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Links.html">Links</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">EECB 703 Readings and Questions</h1>
+
+</div>
+
+
+<div id="eecb-703-questions-2017" class="section level2">
+<h2>EECB 703 Questions 2017</h2>
+<p>Below you will find required readings and study questions for each topic. Note that these will only appear approximately two weeks before the date of a presentation.</p>
+<div id="behavioral-ecology" class="section level3">
+<h3>BEHAVIORAL ECOLOGY</h3>
+<p><em>Date</em>: September 5 Guest Lecturer: Vladimir Pravosudov</p>
+<p>Trivers, R. L. (1974). Parent-offspring conflict. American zoologist, 14(1), 249-264.</p>
+<p>Zahavi, A. (1975). Mate selection—a selection for a handicap. Journal of theoretical Biology, 53(1), 205-214.</p>
+<p>Davis, J. M., &amp; Stamps, J. A. (2004). The effect of natal experience on habitat preferences. Trends in Ecology &amp; Evolution, 19(8), 411-416.</p>
+<ul>
+<li><p>The study of development has often been ignored in the field of Behavioral Ecology. Explain how a developmental perspective can profitably inform our understanding of behavioral ecology and evolution.</p></li>
+<li><p>If you have never been exposed to the ideas in the 1974 paper by Robert Trivers (“Parent-offspring conflict”), then it should have affected how you think about children and parents. Specifically, how is that paper relevant to our understanding of a baby crying for its mother?</p></li>
+<li><p>Explain the perspective on communication between the sexes provided by the 1975 paper by Amotz Zahavi (“Mate selection – a selection for a handicap”).</p></li>
+<li><p>Explain Tinbergen’s four questions, and their utility for studying behavior. Should they always be addressed separately? If so, why? If not, why not?</p></li>
+</ul>
+</div>
+<div id="specialization-niche-dynamics" class="section level3">
+<h3>SPECIALIZATION &amp; NICHE DYNAMICS</h3>
+<p>Matt Forister Sep 19</p>
+<p>Devictor, V., Clavel, J., Julliard, R., Lavergne, S., Mouillot, D., Thuiller, W., … &amp; Mouquet, N. (2010). Defining and measuring ecological specialization. Journal of Applied Ecology, 47(1), 15-25.</p>
+<p>Poisot, T., Bever, J. D., Nemri, A., Thrall, P. H., &amp; Hochberg, M. E. (2011). A conceptual framework for the evolution of ecological specialisation. Ecology Letters, 14(9), 841-851.</p>
+<p>Konuma, J., Sota, T., &amp; Chiba, S. (2013). A maladaptive intermediate form: a strong trade‐off revealed by hybrids between two forms of a snail‐feeding beetle. Ecology, 94(11), 2638-2644.</p>
+<ul>
+<li><p>A trade-off in performance across habitats is perhaps the most intuitive explanation for ecological specialization. With reference to whatever kind of specialization you like (diet breadth, environmental tolerances, etc.) describe the evidence that trade-offs (antagonistic pleiotropy) either are or not important for specialization in a particular group of organisms (birds, spiders, whatever).</p></li>
+<li><p>Consider species A that eats food type 1 and species B that eats food type 2. To paraphrase the classic review of ecological specialization by Futuyma and Moreno (1988), a reciprocal rearing experiment that finds that A and B both die when reared on the other resource probably tells us more about the consequences rather than the causes of specialization. Explain that statement, and describe an experiment that should be done instead, to better understand the causes of specialization.</p></li>
+<li><p>Many authors have pointed out that the history of research in specialization has been too focused on the physiology and performance of individual organisms, often under laboratory conditions, while ignoring the complexity of interactions in the wild. Considering the community context (competitors, enemies, mutualists, primary producers etc.), describe at least three distinct hypotheses to explain the evolution and persistence of specialized phenotypes.</p></li>
+<li><p>Two part question on the macroevolution of specialization: (1) What is the evidence that specialization either is or is not an evolutionary “dead end”? (2) What is the macroevolutionary relationship between diversification and specialization? Neither of these are settled issues, and for both you should explain both what is currently known (from the literature) and explain your opinion (i.e. how do you think the issue might eventually be settled, pending lots more studies of course).</p></li>
+</ul>
+</div>
+<div id="population-ecology" class="section level3">
+<h3>POPULATION ECOLOGY</h3>
+<p>Kevin Shoemaker Sep 26</p>
+<p>Turchin, P. (2001). Does population ecology have general laws?. Oikos, 94(1), 17-26.</p>
+<p>Sibly, R. M., Barker, D., Denham, M. C., Hone, J., &amp; Pagel, M. (2005). On the regulation of populations of mammals, birds, fish, and insects. Science, 309(5734), 607-610.</p>
+<p>Hanski, I. (1998). Metapopulation dynamics. Nature, 396(6706), 41-49.</p>
+<p>Griffith, A. B., Salguero‐Gómez, R., Merow, C., &amp; McMahon, S. (2016). Demography beyond the population. Journal of Ecology, 104(2), 271-280.</p>
+<ul>
+<li><p>Ecologists have been thinking about fluctuations in populations for at least one hundred years. Given that span of time, what do you make of the fact that we are still teaching and discussing some very simple models (like the Lotka-Volterra predator-prey model) that were first created pretty early on in that history?</p></li>
+<li><p>How can populations be regulated without density-dependent mechanisms? Can you think of real-world populations that might be regulated in this manner? Can density-dependent population regulation be considered a fundamental law of nature</p></li>
+<li><p>Given the diversity of mechanisms that can lead to population cycles, can we make any broad generalizations about population cycles in nature? Can you think of some reasons why some populations of the same species might exhibit cyclic abundance dynamics while other populations do not?</p></li>
+<li><p>With respect to metapopulations, there are skeptics that say that the theory is not useful because “real” metapopulations don’t exist. Critique this position, and describe at least one example of a metapopulation from the literature that was not discussed in class.</p></li>
+<li><p>In a recent paper, Griffith et al (2016) state that “population-level processes are an ideal common currency within ecology and evolution”. Explain why you either agree or disagree with this statement?</p></li>
+</ul>
+</div>
+<div id="ecoimmunology-diseases-of-wild-populations" class="section level3">
+<h3>ECOIMMUNOLOGY &amp; DISEASES OF WILD POPULATIONS</h3>
+<p>Angela Smilanich &amp; Jamie Voyles</p>
+<p>Schulenburg, H., Kurtz, J., Moret, Y., &amp; Siva-Jothy, M. T. (2009). Introduction. ecological immunology. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 364(1513), 3-14</p>
+<p>Pamminger, T., Treanor, D., &amp; Hughes, W. O. (2016, January). Pleiotropic effects of juvenile hormone in ant queens and the escape from the reproduction–immunocompetence trade-off. In Proc. R. Soc. B (Vol. 283, No. 1822, p. 20152409). The Royal Society.</p>
+<p>Keesing, F., Holt, R. D., &amp; Ostfeld, R. S. (2006). Effects of species diversity on disease risk. Ecology Letters, 9(4), 485-498</p>
+<p>Young, H. S., Dirzo, R., Helgen, K. M., McCauley, D. J., Billeter, S. A., Kosoy, M. Y., … &amp; Dittmar, K. (2014). Declines in large wildlife increase landscape-level prevalence of rodent-borne disease in Africa. Proceedings of the National Academy of Sciences, 111(19), 7036-7041.</p>
+<ul>
+<li><p>Trade-offs in life-history traits are a large part of the literature in ecological immunology. What does it mean to have a trade-off? What sort of trade-offs would you expect to occur between immunity and life-history traits? How would you demonstrate that such a trade-off exists?</p></li>
+<li><p>Understanding the causes of variation in the immune response is an important component of ecological immunology. First, explain why understanding factors leading to variation in a trait is important, then describe at least two possible ecological factors that could cause variation in the immune response.</p></li>
+<li><p>The Dilution Effect is an appealing hypothesis, but it is also a highly controversial topic in the fields of disease ecology and epidemiology. What are some critical characteristics of hosts, parasites and vectors that would be key for a dilution effect to occur in a disease system?</p></li>
+<li><p>Imagine a scenario in which high biodiversity could lead to an outcome that is opposite to the Dilution Effect (i.e., an amplification effect) and describe the conditions when this might occur.</p></li>
+</ul>
+</div>
+<div id="species-speciation" class="section level3">
+<h3>SPECIES &amp; SPECIATION</h3>
+<p>Matt Forister</p>
+<p>Orr, H. A., &amp; Presgraves, D. C. (2000). Speciation by postzygotic isolation: forces, genes and molecules. BioEssays, 22(12), 1085-1094.</p>
+<p>Mallet, J. (2008). Hybridization, ecological races and the nature of species: empirical evidence for the ease of speciation. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 363(1506), 2971-2986.</p>
+<p>Feder, J. L., Flaxman, S. M., Egan, S. P., Comeault, A. A., &amp; Nosil, P. (2013). Geographic mode of speciation and genomic divergence. Annual Review of Ecology, Evolution, and Systematics, 44, 73-97.</p>
+<ul>
+<li><p>Explain the following terms and ideas that have been important in the history of speciation research: 1) the Dobzhansky-Muller model of speciation, 2) reinforcement, 3) Haldane’s rule.</p></li>
+<li><p>The history of research into speciation has moved from a focus on the geography of speciation (allopatry, parapatry and sympatry) to a focus on the ecology of speciation. Define “ecological speciation” and explain the shift in emphasis from the previous geographical framework.</p></li>
+<li><p>A central concern of modern speciation research is to understand how genomic architecture interacts with the evolution of reproductive isolation. Discuss at least two specific issues involving genetic architecture and the speciation process.</p></li>
+<li><p>Consider the following proposition: “The real controversy with respect to ‘species’ is not about the definition of species, the real issue is whether or not you believe species are entities that can be characterized by differences that are biologically more important than differences among other levels of organization and diversification, such as differences among individuals, populations or communities.” Explain your own position regarding the priority or importance of species as a unit of study.</p></li>
+</ul>
+</div>
+<div id="population-genetics" class="section level3">
+<h3>POPULATION GENETICS</h3>
+<p>Marjorie Matocq</p>
+<p>Wang, I. J., &amp; Bradburd, G. S. (2014). Isolation by environment. Molecular Ecology, 23(23), 5649-5662.</p>
+<p>Marko, P. B., &amp; Hart, M. W. (2011). The complex analytical landscape of gene flow inference. Trends in ecology &amp; evolution, 26(9), 448-456.</p>
+<ul>
+<li><p>How have population biologists measured genetic differentiation within and among populations and what can we infer (or not) about evolutionary processes from commonly-used metrics?</p></li>
+<li><p>Think of a particular species that you are familiar with. Based on the ecology and perhaps biogeographic/evolutionary history of the species, what predictions can you make about factors which are likely to be most important in determining the distribution of genetic variation in the system?</p></li>
+<li><p>Whether we talk about a small number of microsatellites or a large number of SNPs, it is very unusual to find a wild system (population or species) without any genetic variation. Why is that and what maintains genetic variation?</p></li>
+</ul>
+</div>
+<div id="ecological-and-evolutionary-epigenetics" class="section level3">
+<h3>ECOLOGICAL AND EVOLUTIONARY EPIGENETICS</h3>
+<p>David Zeh</p>
+<p>Zeh DW, Zeh JA, Ishida Y. 2009. Transposable elements and an epigenetic basis for punctuated equilibria. Bioessays, 31, 715-726.</p>
+<p>Klironomos FD, Berg J, Collins S. 2013. How epigenetic mutations can affect genetic evolution: Model and mechanism. BioEssays 35, 571-578.</p>
+<p>Recommended but not required: Bonilla MM, Zeh JA, Zeh DW. 2016. An epigenetic resolution of the lek paradox. BioEssays 38, 355-366.</p>
+<ul>
+<li><p>How might transgenerational epigenetic effects be important for organisms adapting to new environments or responding to changing biotic and abiotic conditions (including toxins in the environment)?</p></li>
+<li><p>What is the Lek Paradox and how might discoveries in epigenetics help resolve this paradox?</p></li>
+<li><p>Explain why the classic view of the co-adapted genome is an incomplete representation of eukaryotic genomes, using the human genome as an example.</p></li>
+<li><p>What is the ‘‘epi-transposon hypothesis’’ and how might it help explain macroevolutionary tempo and mode, and resolve long-standing controversies in evolution, such as Wright’s shifting balance theory, Mayr’s peripheral isolates model, and McClintock’s view of genome restructuring as an adaptive response to challenge.</p></li>
+</ul>
+</div>
+<div id="comparative-genomics-and-gene-evolution" class="section level3">
+<h3>COMPARATIVE GENOMICS AND GENE EVOLUTION</h3>
+<p>David Alvarez-Ponce</p>
+<p>Cork, J. M., &amp; Purugganan, M. D. (2004). The evolution of molecular genetic pathways and networks. Bioessays, 26(5), 479-484.</p>
+<p>Alvarez-Ponce, D., &amp; McInerney, J. O. (2011). The human genome retains relics of its prokaryotic ancestry: human genes of archaebacterial and eubacterial origin exhibit remarkable differences. Genome biology and evolution, 3, 782-790.</p>
+<ul>
+<li><p>Can you find any parallels or areas of overlap between the study of genetic networks and the study of ecological networks (food webs)? Put another way, are there any questions that might be pursued in both areas using similar approaches and techniques.</p></li>
+<li><p>Evolutionary biologists have often conceptualized selection and drift acting on genes in isolation, i.e. abstracted from the genomic context in which they interact with other genes. How do you see our understanding of evolution being affected by a knowledge of the structure and function of genetic networks?</p></li>
+</ul>
+</div>
+<div id="genomic-variation-and-architecture" class="section level3">
+<h3>GENOMIC VARIATION AND ARCHITECTURE</h3>
+<p>Tom Parchman</p>
+<p>Ellegren, H., Smeds, L., Burri, R., Olason, P. I., Backström, N., Kawakami, T., … &amp; Uebbing, S. (2012). The genomic landscape of species divergence in Ficedula flycatchers. Nature, 491(7426), 756-760.</p>
+<p>Chapter 2 from: Lynch, M., &amp; Walsh, B. (2007). The origins of genome architecture (Vol. 98). Sunderland: Sinauer Associates. (PDF will be made available)</p>
+<p>Recommended but not required: Kawakami, T., Smeds, L., Backström, N., Husby, A., Qvarnström, A., Mugal, C. F., … &amp; Ellegren, H. (2014). A high‐density linkage map enables a second‐generation collared flycatcher genome assembly and reveals the patterns of avian recombination rate variation and chromosomal evolution. Molecular ecology, 23(16), 4035-4058.</p>
+<ul>
+<li><p>Years ago, non-coding DNA was thought to represent “junk”. Now we know that is not the case. What are some of the functions of non-coding DNA, and what are some of the consequences of non-coding DNA that does not have an apparent function?</p></li>
+<li><p>Recombination rates vary across the genome, across species, and across populations. What are some evolutionary consequences of variation in recombination rate? How does this relate to the idea of ‘divergence’ islands mentioned in the Ellegren et al. 2012 paper?</p></li>
+<li><p>What is the population genetic mechanism(s) that Lynch argues best explain genome size expansion?</p></li>
+</ul>
+</div>
+<div id="physiological-ecology" class="section level3">
+<h3>PHYSIOLOGICAL ECOLOGY</h3>
+<p>Jack Hayes</p>
+<p>Huey, R. B., Kearney, M. R., Krockenberger, A., Holtum, J. A., Jess, M., &amp; Williams, S. E. (2012). Predicting organismal vulnerability to climate warming: roles of behaviour, physiology and adaptation. Phil. Trans. R. Soc. B, 367(1596), 1665-1679.</p>
+<p>Kearney, M., &amp; Porter, W. (2009). Mechanistic niche modelling: combining physiological and spatial data to predict species’ ranges. Ecology letters, 12(4), 334-350.</p>
+<ul>
+<li><p>A fundamental goal in physiological ecology has been to establish mechanistic connections between physiological traits and fitness. In your opinion, have we already learned what we need to know (more or less), or should that remain an important goal moving forward? Be specific with respect to areas of ecology and evolutionary biology for which that physiology and fitness connection is (or has been) most important.</p></li>
+<li><p>A distinction can be made between statistical and physiological (or mechanistic) approaches to niche modeling. What is the distinction? and why might the two approaches produce very different results? Illustrate with a real example from the literature.</p></li>
+<li><p>Explain what type I, type 2, and type 3 statistical errors are. Which of these types of statistical errors do you think is the most important to avoid or minimize?</p></li>
+</ul>
+</div>
+<div id="community-ecology" class="section level3">
+<h3>COMMUNITY ECOLOGY</h3>
+<p>Beth Pringle</p>
+<p>Vellend, M. 2016. Chapter 3: A brief history of ideas in community ecology. pp 20-35 in The Theory of Ecological Communities, Princeton University Press: Princeton.</p>
+<p>Gotelli, N. J., G.R. Graves, C. Rahbek. 2010. Macroecological signals of species interactions in the Danish avifauna. PNAS 107: 5030-5035</p>
+<p>Recommended but not required: Sandel, B. 2015. Towards a taxonomy of spatial scale-dependence. Ecography 38: 358-369.</p>
+<ul>
+<li><p>Clements described an ecological community as an integrative whole, a superorganism. Gleason declared that communities could not be defined because species overlap is merely coincidental—species end up where they do independently of all others. Vellend says that ecologists currently define a community as “a set of species in sometimes arbitrary units of space.” How do you think a community should be defined? Explain your answer.</p></li>
+<li><p>In the Gotelli et al. 2010 paper, they report that biotic interactions, including Allee effects within species and competition between species, may affect species distributions at regional spatial scales. With reference to any system you like, describe how another species interaction (e.g., mutualism, parasitism, predation, herbivory, etc.) may produce patterns that “scale up” in space well beyond the spatial scale of the community or territory of any particular individual.</p></li>
+</ul>
+</div>
+<div id="diversity-neutral-models" class="section level3">
+<h3>DIVERSITY &amp; NEUTRAL MODELS</h3>
+<p>Lee Dyer</p>
+<p>Chave, J. (2004). Neutral theory and community ecology. Ecology letters, 7(3), 241-253.</p>
+<p>Kraft, N.J., Comita, L.S., Chase, J.M., Sanders, N.J., Swenson, N.G., Crist, T.O., Stegen, J.C., Vellend, M., Boyle, B., Anderson, M.J. and Cornell, H.V., 2011. Disentangling the drivers of β diversity along latitudinal and elevational gradients. Science, 333(6050), pp.1755-1758.</p>
+<p>Recommended but not required: Schemske, D. W., Mittelbach, G. G., Cornell, H. V., Sobel, J. M., &amp; Roy, K. (2009). Is there a latitudinal gradient in the importance of biotic interactions?. Annu. Rev. Ecol. Evol. Syst., 40, 245-269.</p>
+<ul>
+<li><p>Two part question about diversity. First, what is diversity? And, second, explain the basic issues or challenges associated with measuring diversity. In answer to the second part, mention at least a couple of the most commonly-used indices of diversity.</p></li>
+<li><p>Does the catalog of hypotheses relating to the latitudinal gradient in diversity reflect (a) our general ignorance and the fact that we have a lot more work to do; (b) the plurality of causes affecting the origins of diversity; or (c) both? Defend your choice and mention specific hypotheses for the latitudinal diversity gradient in your answer.</p></li>
+<li><p>With respect to a specific lineage of organisms, defend an hypothesis or combination of hypotheses explaining global patterns of diversity. Be specific about why a particular hypothesis (or hypotheses) is supported or rejected for the group of organisms you choose.</p></li>
+<li><p>The Unified Neutral Theory of Biodiversity is generally considered to be one of the biggest advances in biodiversity science in recent decades, but the idea of neutrality in community structure has also inspired fierce debate. In some cases, participants in the debate have given the impression that you either believe in neutral theory or you believe that species have real niche differences. Explain why this is a false dichotomy.</p></li>
+</ul>
+</div>
+<div id="soil-ecology" class="section level3">
+<h3>SOIL ECOLOGY</h3>
+<p>Ben Sullivan</p>
+<p>Vitousek, P. M., &amp; Reiners, W. A. (1975). Ecosystem succession and nutrient retention: a hypothesis. BioScience, 25(6), 376-381.</p>
+<p>McGill, W. B., &amp; Cole, C. V. (1981). Comparative aspects of cycling of organic C, N, S and P through soil organic matter. Geoderma, 26(4), 267-286.</p>
+<p>Wieder, W. R., Bonan, G. B., &amp; Allison, S. D. (2013). Global soil carbon projections are improved by modelling microbial processes. Nature Climate Change, 3(10), 909-912.</p>
+<ul>
+<li><p>Design an experiment to test how soil nutrient availability changes in response to a major disturbance event. What might this experiment be able to tell you about whether this ecosystem is at steady state?</p></li>
+<li><p>How would the theories outlined by McGill and Cole cause you to expect to see (and not expect to see) successional change in the soil microbial community as nutrient availability changes over the course of ecosystem development?</p></li>
+<li><p>Including microbial biomass and microbial growth efficiency may improve the ability of an Earth system model to predict carbon stocks and fluxes, but these coarse estimates fail to account for the tremendous variation of the microbiome. Please describe both why and why not explicitly including soil microbial community structure or functional groups would further improve Earth system model-development efforts?</p></li>
+</ul>
+</div>
+<div id="landscape-ecology" class="section level3">
+<h3>LANDSCAPE ECOLOGY</h3>
+<p>Peter Weisberg</p>
+<p>Turner, Monica G. 2005. Landscape ecology: what is the state of the science? Ann. Rev. Ecol. Evol. Syst. 36: 319 – 344.</p>
+<p>Hadley, A.S. and M.G. Betts. 2012. The effects of landscape fragmentation on pollination dynamics: absence of evidence not evidence of absence. Biological Review 87: 526-544.</p>
+<p>Serra-Diaz, J.M., R.M. Scheller, A.D. Syphard and J. Franklin. 2015. Disturbance and climate refugia mediate tree range shifts during climate change. Landscape Ecology 30: 1039-1053.</p>
+<p>Recommended but not required: Fahrig, L. 2003. Effects of habitat fragmentation on biodiversity. Annu. Rev. Ecol. Evol. Syst. 34: 487-515.</p>
+<p>Recommended but not required: Wiens, J.A. 1989. Spatial scaling in ecology. Functional Ecology 3: 385-397.</p>
+<ul>
+<li><p>Landscape ecology is often characterized by its focus on spatial heterogeneity, and particularly on the reciprocal relationship between landscape pattern (e.g., resource mosaic; forest age structure) and ecological process (e.g., animal movement; disturbance propagation). In her review paper describing the state of progress in the discipline, Monica Turner notes that “…the relationship between processes that create patterns and the patterns themselves still is not readily apparent.” Interpret this deceptively simple statement; why is this issue an important one? How can this problem be addressed?</p></li>
+<li><p>Landscape ecologists study several kinds of fluxes, including (but not limited to) flows of genes, movements of animals, the rate and pattern of plant invasions, spread of disturbance agents, and the transfer and cycling of nutrients, energy and matter across heterogeneous landscapes. Does it seem to you that the same kinds of tools and concepts can be used (or are being used) to study these different kinds of fluxes? Or are there key differences? Please provide specific examples.</p></li>
+<li><p>How can our understanding of landscape heterogeneity be made functional, as opposed to merely structural?</p></li>
+<li><p>Many landscape ecological studies have observed that landscape configuration and composition are generally confounded, making it difficult to study the independent effects of habitat fragmentation. Why is it of interest to study the independent effects of landscape configuration vs. composition, or (equivalently) of habitat fragmentation vs. habitat loss? How can these types of effects be separated?</p></li>
+<li><p>How might species range shifts associated with climate change be affected by landscape heterogeneity? How might such shifts also be affected by climate-disturbance interactions? Is it therefore necessary to use dynamic, ecological simulation models to forecast species range shifts, or is it sufficient to use predictions from statistical models (e.g. Maxent, Random Forest)? Justify your response to this question.</p></li>
+</ul>
+</div>
+<div id="applied-evolution" class="section level3">
+<h3>APPLIED EVOLUTION</h3>
+<p>Beth Leger</p>
+<p>Schoener, T. W. (2011). The newest synthesis: understanding the interplay of evolutionary and ecological dynamics. science, 331(6016), 426-429.</p>
+<p>Oduor, A. M. (2013). Evolutionary responses of native plant species to invasive plants: a review. New Phytologist, 200(4), 986-992.</p>
+<ul>
+<li><p>How is natural selection measured in the wild? and describe some examples of recent evolutionary change that have been documented.</p></li>
+<li><p>Why is the idea of a historical reference community central to the intellectual content of biological restoration? What do you think about the “novel ecosystem” concept: helpful new way to look at restoration, or muddying the waters with imprecise terminology?</p></li>
+<li><p>What does the idea of evolutionary potential mean in the context of restoration?</p></li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

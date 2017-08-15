@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="PRINCIPLES OF ECOLOGY,EVOLUTION, AND CONSERVATION BIOLOGY" />
+
+
+<title>Welcome to EECB 703</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EECB 703</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="Syllabus.pdf">Syllabus</a>
+</li>
+<li>
+  <a href="Calendar.html">Calendar</a>
+</li>
+<li>
+  <a href="https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing">Readings/Questions</a>
+</li>
+<li>
+  <a href="https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing">Study Guide</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Overview Lectures
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="INTRO.html">Introduction to EECB 703</a>
+    </li>
+    <li>
+      <a href="LECTURE1.html">Behavioral Ecology</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Links.html">Links</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Welcome to EECB 703</h1>
+<h4 class="author"><em>PRINCIPLES OF ECOLOGY,EVOLUTION, AND CONSERVATION BIOLOGY</em></h4>
+
+</div>
+
+
+<div id="course-meetings-3-credits" class="section level3">
+<h3>Course Meetings (3 credits)</h3>
+<p><strong>TIME</strong>: Tues at noon (3 hours)<br />
+<strong>PLACE</strong>: <strong>FA 300G</strong></p>
+<p><strong>Instructor:</strong> Kevin Shoemaker<br />
+- <strong>Office</strong>: FA 220E<br />
+- <strong>Phone</strong>: (775) 682-7449<br />
+- <strong>Email</strong>: <a href="kshoemaker@cabnr.unr.edu" class="uri">kshoemaker@cabnr.unr.edu</a><br />
+- <strong>Skype</strong>: kevin.t.shoemaker<br />
+- <strong>Office hours</strong>: Immediately before class meetings, and by appointment</p>
+<p><strong>Course Website</strong>: <a href="http://naes.unr.edu/shoemaker/teaching/EECB-703/index.html">naes.unr.edu/shoemaker/teaching/EECB-703</a></p>
+<p><strong>Texts</strong>: Readings from the primary literature (see <a href="https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing">Google Doc</a>)</p>
+</div>
+<div id="class-description" class="section level3">
+<h3>Class description</h3>
+<p>This class will provide a broad overview of the diverse subdisciplines that fall under the “Ecology, Evolution and Conservation Biology” umbrella. You will be exposed to a broad range of ecological and evolutionary principles, including applications in management and conservation. Both historical and contemporary research is emphasized. Readings are drawn exclusively from the primary literature. This course serves as a foundation for other, more specialized courses offered through the Ecology, Evolution and Conservation Biology (EECB) graduate program. Topics will be introduced by guest experts, most of whom are part of the EECB faculty.</p>
+<p>Specific topics to be covered include: physiological ecology, behavioral ecology, population ecology, natural selection and population structure, genomics research, epigenetics, speciation and macroevolution, phylogenetic reconstruction and the comparative method, community ecology, conservation, management and restoration, philosophy of science and biology, quantitative methods in ecological research.</p>
+</div>
+<div id="learning-outcomes" class="section level3">
+<h3>Learning outcomes</h3>
+<p>Outcomes of this class will include the following: 1. Students will be exposed to a broad range of ecological and evolutionary principles, including applications in management and conservation.<br />
+2. Students will develop skills in critical thinking and communication through participation in and leadership of in-class discussions. 3. Students will gain skills in preparing for written and oral exams at the graduate level.</p>
+</div>
+<div id="grading" class="section level3">
+<h3>Grading</h3>
+<p>Your grade for this course will be based on the following: - Participation (70%) - Final Exam (30%) <em>Grading scale</em>: A (100–93), A- (92–90), B+ (89–87), B (86–83), B- (82–80), C+ (79–77), C (76–73), C- (72–70), D+ (69–67), D (66–63), D- (62–60), F (below 60)</p>
+</div>
+<div id="final-exam" class="section level3">
+<h3>Final exam</h3>
+<p>The final exam will consist of short essay questions reflecting the diversity of material covered.</p>
+</div>
+<div id="participation" class="section level3">
+<h3>Participation</h3>
+<p>As discussed above, a major learning objective of this course is to develop skills in critical thinking and communication. The ability to intelligently discuss challenging issues is essential to success in graduate school, and my aim is to give you a jump start with this course. Come prepared every day to contribute.</p>
+</div>
+<div id="readings" class="section level3">
+<h3>Readings</h3>
+<p>The majority of the readings you will do in this class will be from the primary literature, as listed on the <a href="https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing">“Readings and Questions” document</a> on a weekly basis. You can expect to read approx. 4 papers per week. You are expected to seek out any additional references for areas that you feel you need help with.</p>
+</div>
+<div id="academic-dishonesty" class="section level3">
+<h3>Academic dishonesty</h3>
+<p>Academic dishonesty (cheating, plagiarism or other dishonest behavior related to grades and performance) will not be tolerated under any circumstances.</p>
+</div>
+<div id="disability-resources" class="section level3">
+<h3>Disability resources</h3>
+<p>I encourage any student needing accommodations for a specific disability to please meet with me at their earliest convenience to ensure timely and appropriate accommodations.</p>
+</div>
+<div id="statement-on-audio-and-video-recording" class="section level3">
+<h3>Statement on Audio and Video Recording</h3>
+<p>Surreptitious or covert video-taping of class or unauthorized audio recording of class is prohibited by law and by Board of Regents policy. This class may be videotaped or audio recorded only with the written permission of the instructor. In order to accommodate students with disabilities, some students may be given permission to record class lectures and discussions. Therefore, students should understand that their comments during class may be recorded.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

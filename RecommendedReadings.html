@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>EECB 703 Recommended Readings</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EECB 703</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="Syllabus.pdf">Syllabus</a>
+</li>
+<li>
+  <a href="Calendar.html">Calendar</a>
+</li>
+<li>
+  <a href="https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing">Readings/Questions</a>
+</li>
+<li>
+  <a href="https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing">Study Guide</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Overview Lectures
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="INTRO.html">Introduction to EECB 703</a>
+    </li>
+    <li>
+      <a href="LECTURE1.html">Behavioral Ecology</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Links.html">Links</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">EECB 703 Recommended Readings</h1>
+
+</div>
+
+
+<p>Aarssen, L.W. 1997. On the Progress of Ecology. Oikos 80:177-178</p>
+<p>Abrams, P.A. 1984. Foraging time optimization and interactions in food webs. American Naturalist 124:80</p>
+<p>Abrams, P.A; Matsuda, H.; Harada, Y. 1993. Evolutionarily unstable fitness maxima and stable fitness minima of continuous traits. Evolutionary Ecology 7:465-487</p>
+<p>Allen, J.C.; Schaffer, W.M.; Rosko, D. 1993. Chaos reduces species extinction by amplifying local population noise. Nature 364:229-232</p>
+<p>Altizer, S. et al. 2013. Climate change and infectious diseases: from evidence to a predictive framework. Science 341:514-519</p>
+<p>Altmann, J. 1974. Observational Study of Behavior: Sampling Methods. Behaviour 49:227-266</p>
+<p>Anderson, R.M; May, R.M. 1980. Infectious Diseases and Population Cycles of Forest Insects. Science 210:658-661</p>
+<p>Anderson, R.M; May, R.M. 1978. Regulation and Stability of Host-Parasite Population Interactions. Journal of Animal Ecology 47:219-247</p>
+<p>Andren, H. 1994. Effects of Habitat Fragmentation on Birds and Mammals in Landscapes with Different Proportions of Suitable Habitat: A Review. Oikos 71:355-366</p>
+<p>Armstrong, R.A.; McGehee, R. 1980. Competitive exclusion. American naturalist 115:151-170</p>
+<p>Axelrod, R.; Hamilton, W. D. 1981. The Evolution of Cooperation. Science 211:1390-1396</p>
+<p>Bak, P.; Sneppen, K. 1993. Punctuated equilibrium and criticality in a simple model of evolution. Physical Review Letters 7:4083-4086</p>
+<p>Barrangou, R. et al. 2007. CRISPR provides acquired resistance against viruses in prokaryotes. Science 315:1709-1712</p>
+<p>Barton, N.H.; Hewitt, G.M. 1985. Analysis of hybrid zones. Annual Review of Ecology and Systematics 16:113-148</p>
+<p>Belovsky, G.E. 1997. Optimal foraging and community structure: The allometry of herbivore food selection and competition. Evolutionary Ecology 11:641-672</p>
+<p>Berenbaum, M.R. 2002. Postgenomic chemical ecology: from genetic code to ecological interactions. Journal of chemical ecology 28:873-896</p>
+<p>Bertness; C. 1994. Positive interactions in communities. Trends in Ecology and Evolution 9:191-193</p>
+<p>Bloom, A.J.; Chapin, F.S.; Mooney H.A. 1985. Resource limitation in plants- An economic analogy. Annual review of ecology and systematics 16:363-392</p>
+<p>Boero, F. et al. 2004. From biodiversity and ecosystem functioning to the roots of ecological complexity. Ecological Complexity 1:101-109</p>
+<p>Boero, F.et al. 2008. Gelatinous plankton: Irregularities rule the world. Marine Ecology Progress Series 356:299-310</p>
+<p>Bolnick, D. et al. 2003. The ecology of individuals: incidence and implications of individual specialization. American Naturalist 161:46753</p>
+<p>Bronstein, Judith L. 1994. Conditional outcomes in mutualistic interactions. Trends in Ecology &amp; Evolution 9:214-217</p>
+<p>Brooks, J.L.; Dodson, S.I. 1965. Predation, Body Size, and Composition of Plankton: The effect of a marine planktivore on lake plankton. Science 150:28-35</p>
+<p>Brown, J.H. 1984. On the Relationship between Abundance and Distribution of Species. The American Naturalist 124:255</p>
+<p>Burnham, K.P. 2004. Multimodel Inference: Understanding AIC and BIC in Model Selection. Sociological Methods &amp; Research 33:261-304</p>
+<p>Burnham, K.P.; Anderson, D.R. 2001. Kullback-Leibler information as a basis for strong inference in ecological studies. Wildlife Research 28:111-119</p>
+<p>Caldwell M.M., Eissenstat D.M., Richards J.H. 1985. Competition for phosphorus : differential uptake from dual-isotope-labeled soil interspaces between shrub and grass. Science 229:384-386</p>
+<p>Callaway, R. et al. 2002. Positive interactions among alpine plants increase with stress. Nature 417:844-848</p>
+<p>Cardinale, B.J. et al. 2006. Effects of biodiversity on the functioning of trophic groups and ecosystems. Nature 443:989-992</p>
+<p>Cardinale, B.J. et al. 2007. Impacts of plant diversity on biomass production increase through time because of species complementarity. Proceedings of the National Academy of Sciences of the United States of America 104:18123-18128</p>
+<p>Carpenter, S.R. et al. 1987. Regulation of lake primary productivity by food web structure. Ecology 68:1863-1876</p>
+<p>Carpenter, S.R. et al. 2009. Science for managing ecosystem services: Beyond the Millennium Ecosystem Assessment. Proceedings of the National Academy of Sciences of the United States of America 106:1305-1312</p>
+<p>Carpenter, S.R.; Kitchell, J.F.; Hodgson, J.R. 1985. Cascading trophic interactions and lake productivity. BioScience 35:634-639</p>
+<p>Carroll, S.P. et al. 2007. Evolution on ecological time-scales. Functional Ecology 21:387-393</p>
+<p>Chamberlin T.C. 1965. The method of Multiple Working hypotheses. Science. 15:92-96</p>
+<p>Chapin, F.S. et al. 2006. Reconciling carbon-cycle concepts, terminology, and methods. Ecosystems 9:1041-1050</p>
+<p>Charnov, E.L. 1976. Optimal foraging, the marginal value theorem. Theoretical Population Biology 9:129-136</p>
+<p>Chave,J. 2013. The problem of pattern and scale in ecology: what have we learned in 20 years? Ecology Letters 16:42461</p>
+<p>Chesson, P. 2000. Mechanisms of Maintenance of Species Diversity. Annual Review of Ecology and Systematics 31:343-366</p>
+<p>Clarke, B.C. 1979. The Evolution of Genetic Diversity. Proceedings of the Royal Society B: Biological Sciences 205:453-474</p>
+<p>Clark, J.S. ; McLachlan, J.S. 2003. Stability of forest biodiversity. Nature 423:635-638</p>
+<p>Connell, J.H. 1978. Diversity in tropical rain forests and coral reefs. Science 199:1302-1310</p>
+<p>Connell, J.H.; Slatyer, R.O. 1977. Mechanisms of succession in natural communities and their role in community stability and organisation. The American Naturalist 111:1119-1144</p>
+<p>Connor, E.F.; McCoy, E.D. 1979. The Statistics and Biology of the Species-Area Relationship. The American Naturalist 113:791</p>
+<p>Connor, E; Simberloff, D. 1983. Interspecific competition and species co-occurrence patterns on islands: null models and the evaluation of evidence. Oikos 41:455-465</p>
+<p>Cornell, H.V. 2013. Is regional species diversity bounded or unbounded? Biological Reviews 88:140-165</p>
+<p>Courchamp, F. et al. 2015. Fundamental ecology is fundamental. Trends in Ecology &amp; Evolution 30:42614</p>
+<p>Courchamp, F.; Clutton-Brock, T.; Grenfell, B. 1999. Inverse density dependence and the Allee effect. Trends in Ecology and Evolution 14:405-410</p>
+<p>Cottingham K.L., Lennon J.T., Brown B.L. 2004. Knowing when to draw the line : designing more informative ecological experiments. Frontiers in Ecology and the Environment 486:59-67</p>
+<p>Cremer, S.; Armitage, S.A.O.; Schmid-Hempel, P. 2007. Social Immunity. Current Biology 17:693-702</p>
+<p>Crouse, D.T; Crowder, L.B; Caswell, H. 1987. A Stage-Based Population Model for Loggerhead Sea Turtles and Implications for Conservation. Ecology 68:1412</p>
+<p>Damuth, J. 1981. Body Size in Mammals. Nature 290:699-700</p>
+<p>Dayton, P.K. 1973. Two cases of resource partitioning in an intertidal community: Making the right prediction for the wrong reason. The American Naturalist 107:662</p>
+<p>Dayton, P.K. et al. 1974. Biological Accommodation in the Benthic Community at McMurdo Sound, Antarctica. Ecological Monographs 44:105-128</p>
+<p>Dayton, P.K. et al. 1992. Temporal and Spatial Patterns of Disturbance and Recovery in a Kelp Forest Community. Ecological Monographs 62:421-445</p>
+<p>Dempster, E.R. 1955. Maintenance of genetic heterogeneity. Cold Spring Harbor Symposia on Quantitative Biology 20:25-32</p>
+<p>Diamond, J.M. 1975. The island dilemma: Lessons of modern biogeographic studies for the design of natural reserves. Biological Conservation 7:129-146</p>
+<p>Diaz S. et al. 2004. The plant traits that drive ecosystems: Evidence from three continents. Journal of Vegetation Science 15:295-304</p>
+<p>Dirzo, R. et al. 2014. Defaunation in the Anthropocene. Science 345:401-406</p>
+<p>Dray, S.; Legendre, P. 2008. Testing the species traits environment relationships: The fourth-corner problem revisited. Ecology 89:3400-3412</p>
+<p>Duffy, E.J. 2002. Biodiversity and ecosystem function: the consumer connection. Oikos 99:201-219</p>
+<p>Dushoff, J. et al. 2004. Dynamical resonance can account for seasonality of influenza epidemics. Proceedings of the National Academy of Sciences of the United States of America 101:16915-16916</p>
+<p>Dynesius, M.; Jansson, R. 2000. Evolutionary consequences of changes in species’ geographical distributions driven by Milankovitch climate oscillations. Proceedings of the National Academy of Sciences of the United States of America 97:9115-9120</p>
+<p>Earn, D.J.D.; Dushoff, J.; Levin, S.A. 2002. Ecology and evolution of the flu. Trends in Ecology &amp; Evolution 17:334-340</p>
+<p>Ehrlich P.R; Birch L.C. 1967. The -balance of nature- and -population control-. The American Naturalist 101:97-107</p>
+<p>Ehrlich, P.R.; Raven, P.H. 1964. Butterflies and plants: a study in coevolution. Evolution 18:586-608</p>
+<p>Ellner, S.P. 2001. Habitat structure and population persistence in an experimental community. Nature 412:538-543</p>
+<p>Elser J.J. 2000. Biological stoichiometry from genes to ecosystems. Ecology letters 3:540-550</p>
+<p>Ehrlich, P.R.; Raven, P.H. 1964. Butterflies and plants: a study in coevolution. Evolution 18:586-608</p>
+<p>Engen, S.; Bakke, O.; Islam, A. 1998. Demographic and Environmental Stochasticity-Concepts and Definitions. Biometrics 54:840-846</p>
+<p>Estes, J.A.; Duggins, D.O. 1995. Sea Otters and Kelp Forests in Alaska: Generality and Variation in a Community Ecological Paradigm. Ecological Monographs 65:75?100</p>
+<p>Feder, M.E; Bennett, A.F.; Huey, R.B. 2000. Evolutionary physiology 1. Annu. Rev. Ecol. Syst 31:315-341</p>
+<p>Felsenstein, J. 1985. Phylogenies and the comparative method. The American Naturalist 125:1</p>
+<p>Forman, R.T.T. 1995. Some general principles of landscape and regional ecology. Landscape Ecology 10:133-142</p>
+<p>Fretwell S.D. &amp; Lucas H.L. 1970. On territorial behavior and others factors influencing habitat distribution in birds. I. Theoretical development. Acta Biothereotica 19:16-36</p>
+<p>Friedenberg, N.A. 2003. Experimental evolution of dispersal in spatiotemporally variable microcosms. Ecology Letters 6:953-959</p>
+<p>Futuyma, D. J., &amp; Moreno, G. (1988). The evolution of ecological specialization. Annual Review of Ecology and Systematics, 207-233.</p>
+<p>Garland, T.; Adolph, S.C. 1994. Why Not To Do 2-Species Comparative-Studies - Limitations on Inferring Adaptation. Physiological Zoology 67:797-828</p>
+<p>Gaston, K.J. 2000. Global patterns in biodiversity. Nature 405:220-227</p>
+<p>Gause, G.F. 1934. Experimental Analysis of Vito Volterra’S Mathematical Theory of the Struggle for Existence. Science 79:16-17</p>
+<p>Gehring C.A. &amp; Whitham T.G. 1995. Duration of herbivore removal and environmental stress affect the ectomycorrhizae of pinyion pines. Ecology 76:2118-2123</p>
+<p>Gotelli, N.J.; Colwell, R.K. 2001. Quantifying biodiversity: procedures and pitfalls in the measurment and comparison of species richness. Ecology Letters 4:379-391</p>
+<p>Grace J.B. 1991. A clarification of the debate between Grime and Tilman. Functional Ecology 5:583-587</p>
+<p>Grant, P.R; Grant, B.R. 1995. The Founding of a New Population of Darwin’s Finches. Evolution 49:229-240</p>
+<p>Grimm, V. 2005. Pattern-oriented modeling of agent-based complex systems: lessons from ecology. Science 310:987-991</p>
+<p>Grinnell, B.Y. 1917. The niche-relationships of the california thrasher. The Auk 34:427-433</p>
+<p>Hairston, N.G. 1993. Cause-Effect Relationships in Energy-Flow, Trophic Structure, and Interspecific Interactions. American Naturalist 142:379-411</p>
+<p>Hairston, N.G. ; Smith, F.; Slobodkin, L. 1960. Community structure, population control, and competition. The American Naturalist 94:421-425</p>
+<p>Hamilton, W.D. 1964a. The genetical evolution of social behaviour. I. Journal of Theoretical Biology 7:42370</p>
+<p>Hamilton, W.D. 1966. The moulding of senescence by natural selection. Journal of Theoretical Biology 12:16772</p>
+<p>Hamilton W.D. &amp; Zuk M. 1982. Heritable trus fitness and bright birds : a role for parasites? Science 28:384-387</p>
+<p>Hanski, I. 1994. A practical model of metapopulation dynamics. Journal of Animal Ecology. 63:151?162.</p>
+<p>Hardin, G.. 1960. The competitive exclusion principle. Science 131:1292-1297</p>
+<p>Hardin, G.J. 1968. The tragedy of the commons. Science 162:1243-1248</p>
+<p>Harmon, L.J.; Harrison, S. 2015. Species Diversity Is Dynamic and Unbounded at Local and Continental Scales. The American Naturalist 185:000-000</p>
+<p>Hassell, M.P., Comins H.N., May R.M. 1991. Spatial structure and chaos in insect population dynamics. Nature 353: 255-258</p>
+<p>Hassell M.P.; Comins, H.N.; May, R.M. 1994. Species coexistence and self-organizing spatial dynamics. Nature 370:290-292</p>
+<p>Hassell M.P.; May R.M. 1973. Stability in insect host-parasite models. Journal of Animal Ecology 42:693-726</p>
+<p>Hassell M.P.; May, R.M. 1986. Generalist and Specialist Natural Enemies in Insect Predator-Prey Interactions. Journal of Animal Ecology 55:923-940</p>
+<p>Hatton, I.A. et al. 2015. The predator-prey power law: Biomass scaling across terrestrial and aquatic biomes. Science 349:aac6284-aac6284</p>
+<p>Hawkins B.A. et al. 2003. Energy, water, and broad-scale geographic patterns of species richness. Ecology 84:2105-3117</p>
+<p>He, F. &amp; Hubbell, S.P. 2011. Species?area relationships always overestimate extinction rates from habitat loss. Nature 473:368?371</p>
+<p>Hendry, A.P.; Kinnison, M.T. 1999. The pace of modern life: Measuring rates of contemporary microevolution. Evolution 53:1637-1653</p>
+<p>Herms, D.A.; Mattson, W.J. 1992. The Dilemma of Plants: To Grow or Defend. The Quarterly Review of Biology 67:283</p>
+<p>Hodos, W.; Campbell, C.B. 1969. Scala naturae - why there is no theory in comparative psychology. Psychological Review 76:337-350</p>
+<p>Holling, C.S. 1959. The Components of Predation as Revealed by a Study of Small-Mammal Predation of the European Pine Sawfly. The Canadian Entomologist 91:293-320</p>
+<p>Holling, C.S. 1973. Resilience and Stability of Ecological Systems. Annual Review of Ecology and Systematics 4:44927</p>
+<p>Hooper, D.U.; Chapin III, F.S.; Ewel, J.J. 2005. Effects of biodiversity on ecosystem functioning: a consensus of current knowledge. Ecological Monographs 75:12844.</p>
+<p>Horn, H.S.; MacArthur, R.H. 1972. Competition among Fugitive Species in a Harlequin Environment. Ecology 53:749-752</p>
+<p>Houle, D. 2010. Colloquium papers: Numbering the hairs on our heads: the shared challenge and promise of phenomics. Proceedings of the National Academy of Sciences of the United States of America 107 Suppl:1793-1799</p>
+<p>Huey, R.B. et al. 2012. Predicting organismal vulnerability to climate warming: roles of behaviour, physiology and adaptation. Philosophical Transactions of the Royal Society B: Biological Sciences 367:1665-1679</p>
+<p>Huffaker, C.B. 1958. Experimental studies on predation: dispersion factors and predator-prey oscillations. Hilgardia 27:343-383</p>
+<p>Hurlbert, S.H.; Lombardi, C.M. 2009. Final Collapse of the Neyman-Pearson Decision Theoretic Framework and Rise of the neoFisherian. Annales Zoologici Fennici 46:311-349</p>
+<p>Huston, M.A. 1997. Hidden treatments in ecological experiments: re-evaluating the ecosystem function of biodiversity. Oecologia 110:449-460</p>
+<p>Hutchinson, G.E. 1957. Concluding Remarks. Cold Spring Harbor Symposia on Quantitative Biology 22:415-427</p>
+<p>Hutchinson, G.E. 1959. Homage to Santa Rosalia or Why Are There So Many Kinds of Animals? The American Naturalist 93:145</p>
+<p>Hutchinson, G.E. 1961. The Paradox of the Plankton. The American Naturalist 95:137-145</p>
+<p>Jackson, S.T.; Overpeck, J.T. 2000. Responses of plant populations and communities to environmental changes of the late Quaternary. Paleobiology 26:194-220</p>
+<p>Janzen D.H. 1967. Why mountain passes are higher in the tropics. The American Naturalist 101:233</p>
+<p>Janzen, D.H. 1970. Herbivores and the Number of Tree Species in Tropical Forests. The American Naturalist 104:501</p>
+<p>Janzen, D.H.; Martin, P.S. 1982. Neotropical Anachronisms: The Fruits the Gomphotheres Ate. Science 215:19-27</p>
+<p>Johnson, J.B.; Omland, K.S. 2004. Model selection in ecology and evolution. Trends in Ecology &amp; Evolution 19:101-108</p>
+<p>Johnson, N.C. 2010. Resource stoichiometry elucidates the structure and function of arbuscular mycorrhizas across scales. New Phytologist 185:631-647</p>
+<p>Jones C.G.; Lawton J. H.; Shachak M. 1994. Organisms as ecosystem engineers. Oikos 69:373-386</p>
+<p>Jost, L. (2006). Entropy and diversity. Oikos, 113(2), 363-375.</p>
+<p>Keddy, P.A. 1992. Assembly and response rules: two goals for predictive community ecology. Journal of Vegetation Science 3:157-164</p>
+<p>Kettlewell, H.B.D. 1955. Selection experiments on industrial malanism in the Lepidoptera. Heredity 9:323-342</p>
+<p>Kingsolver, J.G. et al. 2001. The strength of phenotypic selection in natural populations. The American Naturalist 157:245-261</p>
+<p>Koerner, C. 2006. Plant CO2 responses: An issue of definition, time and resource supply. New Phytol 172:393-411</p>
+<p>Koerner, C. 2015. Paradigm shift in plant growth control. Current Opinion in Plant Biology 25:107-114</p>
+<p>Kot, M.; Lewis, M.A.; Van Den Driessche, P. 1996. Dispersal data and the spread of invading organisms. Ecology 77:2027-2042</p>
+<p>Lande, R. 1980. Sexual dimorphism, sexual selection, and adaptation in polygenic characters. Evolution 34:292-305</p>
+<p>Lande, R.; Arnold, S.J. 1983. The measurement of selection on correlated characters. Evolution 37:1210-1226</p>
+<p>Langer, P.; Hogendoorn, K.; Keller, L. 2004. Tug-of-war over reproduction in a social bee. Nature 428:844-847</p>
+<p>Lavorel, S.; Garnier, E. 2002. Predicting changes in community composition and ecosystem functioning from plant traits: revisting the Holy Grail. Functional Ecology 16:545-556</p>
+<p>Lebreton, J-D. 1992. Modeling Survival and Testing Biological Hypotheses Using Marked Animals - A Unified Approach with Case Studies. Ecological Monographs 62:67-118</p>
+<p>Lee, C.E. 2002. Evolutionary genetics of invasive species. Trends in Ecology &amp; Evolution 17:386-391</p>
+<p>Leibold, M.A. et al. 2004. The metacommunity concept: a framework for multi-scale community ecology. Ecology Letters 7:601-613</p>
+<p>Leigh, E.G.; Vermeij, G.J. 2002. Does natural selection organize ecosystems for the maintenance of high productivity and diversity? Philosophical Transactions of the Royal Society of London. Series B, Biological sciences 357:709-718</p>
+<p>Levins, R. 1966. The strategy of model building in population biology. American Scientist 54:421-431</p>
+<p>Ley, R.E. et al. 2008. Evolution of mammals and their gut microbes. Science 320:1647-1651</p>
+<p>Likens, G.E. et al. 1970. Effects of Forest Cutting and Herbicide Treatment on Nutrient Budgets in the Hubbard Brook Watershed-Ecosystem. Ecological Monographs 40:23-47</p>
+<p>Lima, S.L. 1998. Nonlethal Effects in the Ecology of Predator-Prey Interactions: What are the ecological effects of anti-predator decision-making? BioScience 48:25-34</p>
+<p>Lindeman, R.L. 1942. The trophic-dynamic aspect of ecology. Ecology 23:399-418</p>
+<p>MacArthur, R. 1955. Fluctuations of Animal Populations and a Measure of Community Stability. Ecology 36:533</p>
+<p>MacArthur, R.H.; McArthur, J. 1961. On bird species diversity. Ecology 42:594-598</p>
+<p>MacArthur, R.H.; Pianka, E. R. 1966. On optimal use of a patchy environment. American Naturalist 100:603-609</p>
+<p>Margalef, R. 1963. On Certain Unifying Principles in Ecology. American Naturalist 97:357-374</p>
+<p>Marquet, P.A. et al. 2014. On Theory in Ecology. BioScience 64:701-710</p>
+<p>Martens, W.J. et al. 1995. Potential impact of global climate change on malaria risk. Environ Health Perspect 103:458-464</p>
+<p>May R.M. 1976. Simple mathematical models with very complicated dynamics. Nature 261:459-467</p>
+<p>May R.M. 1977. Thresholds and breakpoints in ecosystms with a multiplicity of stable states. Nature 260:471-477</p>
+<p>May R.M. &amp; Anderson, R.M. 1979. Population biology of infectious diseases: Part II. Nature 280:455-461</p>
+<p>May, R.M.; Anderson, R.M. 1983. Epidemiology and genetics in the coevolution of parasites and hosts. Proceedings of the Royal Society B: Biological Sciences 219:281-313</p>
+<p>May, R.M. &amp; MacArthur, R.H. 1972a. Niche overlap as a function of environmental variability. Proceedings of the National Academy of Sciences of the United States of America 69:1109-1113</p>
+<p>McCann, K.; Hastings, A.; Huxel, G.R. 1998. Weak trophic interactions and the balance of nature. Nature 395:794-798</p>
+<p>Menge, B. et al. 2003. Coastal oceanography sets the pace of rocky intertidal community dynamics. Proceedings of the National Academy of Sciences of the United States of America 100:12229-12234</p>
+<p>Mitchell W.A.; Valone T.J. 1990. The optimization research program?studying adaptations by their functions. Quarterly Review of Biology 65:43-52</p>
+<p>Mooney, H.A.; Dunn, E.L. 1970. Convergent Evolution of Mediterranean-Climate Evergreen Sclerophyll Shrubs. Evolution 24:292-303</p>
+<p>Mora, C. et al. 2011. How many species are there on earth and in the ocean? PLOS Biology 9:42217</p>
+<p>Murdoch, W.W.; Chesson, J.; Chesson, P.L. 1985. Biological control in theory and practice. American Naturalist 125:344-366</p>
+<p>Murtaugh, P.A. 2014. In defense of P values. Ecology 95:611-617</p>
+<p>Mousseau, T.; Roff, D. 1987. Natural selection and the heritability of fitness components. Heredity 59:181-197</p>
+<p>Naeem, S. 2002. Ecosystem consequences of biodiversity loss: The evolution of a paradigm. Ecology 83:1537-1552</p>
+<p>Naeem, S.; Wright, J.P. 2003. Disentangling biodiversity effects on ecosystem functioning: deriving solutions to a seemingly insurmountable problem. Ecology Letters 6:567-579</p>
+<p>Nakagawa, S.; Cuthill, I.C. 2007. Effect size, confidence interval and statistical significance: a practical guide for biologists. Biological reviews of the Cambridge Philosophical Society 82:591-605</p>
+<p>Nelson, M.P.; Vucetich, J.A. 2009. On Advocacy by Environmental Scientists: What, Whether, Why, and How. Conservation Biology 23:1090-1101</p>
+<p>Nicholson, A.J. 1957. The Self-Adjustment of populations to change. Cold Spring Harbor Symposiaon Quantitative Biology 22: 153-173</p>
+<p>Noble, I.R.; Slatyer, R.O. 1980. The use of vital attributes to predict successional changes in plant communities subject to recurrent disturbances. Vegetatio 43:44317</p>
+<p>Odum, E.P. 1969. The strategy of ecosystem development. Science 164:262-270</p>
+<p>Oksanen, L. et al. 1981. Exploitation ecosystems in gradients of primary productivity. The American Naturalist 118:240-261</p>
+<p>Orians, G.H. 1962. Natural selection and ecological theory. American Naturalist 96:257-263</p>
+<p>Pace, M.L. et al. 1999. Trophic cascades revealed in diverse ecosystems. Trends in Ecology &amp; Evolution 14:483-488</p>
+<p>Paine, R.T. 1966. Food Web Complexity and Species Diversity. The American Naturalist 100:65-75</p>
+<p>Paine, R.T. 1969. A note on trophic complexity and community stability. The American Naturalist 103:91-93</p>
+<p>Palmer, T.M. et al. 2008. Breakdown of an ant-plant mutualism follows the loss of large herbivores from an African savanna. Science 319:192-195</p>
+<p>Petchey, O.L. et al. 2015. The ecological forecast horizon, and examples of its uses and determinants. Ecology Letters 18:597-611</p>
+<p>Petrovskii, S.V.; Morozov, A.Y.; Venturino, E. 2002. Allee effect makes possible patchy invasion in a predator-prey system. Ecology Letters 5:345-352</p>
+<p>Pianka, E.R. 1970. On r- and K-selection. American Naturalist 104:592-597</p>
+<p>Pimentel D. 1968. Population regulation and genetic feedback. Science 159:1432-1437</p>
+<p>Platt J.R. 1964. Strong Inference. Science 146:347-353</p>
+<p>Poff, N.L. 1997. The natural flow regime. Bioscience 47:769-784</p>
+<p>Polis G.A. 1991. Complex trophic interactions in deserts : an empirical critique of food-web theory. The American Naturalist 138:123</p>
+<p>Pulliam, R.H. 2000. On the relationship between niche and distribution. Ecology letters 3:349-361</p>
+<p>Rabosky, D.L.; Hurlbert, A.H. 2015. Species Richness at Continental Scales Is Dominated by Ecological Limits. The American Naturalist 185:000-000</p>
+<p>Raguso, R.A. et al. 2015. The raison d’?tre of chemical ecology. Ecology 96:617-630</p>
+<p>Raup, D.M. 1994. The role of extinction in evolution. Proceedings of the National Academy of Sciences 91:6758-6763</p>
+<p>Rees, M.; Ellner, S.P. 2009. Integral projection models for populations in temporally varying environments. Ecological Monographs 79:575-594</p>
+<p>Reich, P.B. 2014. The world-wide -fast-slow- plant economics spectrum: a traits manifesto. Journal of Ecology 102:275-301</p>
+<p>Reiners, W.A. 1986. Complementary models for ecosystems. The American Naturalist 127:59-73</p>
+<p>Rice, W.R. 1996. Sexually antagonistic male adaptation triggered by experimental arrest of female evolution. Nature 381:232-234</p>
+<p>Ricklefs, R.E. 1987. Community diversity: relative roles of local and regional processes. Science 235:167-171</p>
+<p>Ricklefs, R.E. 2008. Disintegration of the Ecological Community. The American Naturalist 172:741-750</p>
+<p>Rosenzweig, M. 1971. Paradox of enrichment: destabilization of exploitation ecosystems in ecological time. Science 171:385-387</p>
+<p>Sala, O. et al. 2000. Global Biodiversity Scenarios for the Year 2100. Science 5459:1770-1774</p>
+<p>Sand-Jensen, K. 2007. How to write consistently boring scientific literature. Oikos 116:723-727</p>
+<p>Scheffer, M. et al. 2001. Catastrophic shifts in ecosystems. Nature 413:591-596</p>
+<p>Scheiner, S.M.; Willig, M.R. 2008. A general theory of ecology. Theoretical Ecology 1:21-28</p>
+<p>Schindler D.W.; Fee A.J. 1974. Experimental lakes area : whole-lake experiments in eutrophication. Journal of the Fisheries Research Board of Canada 31:937-953</p>
+<p>Schindler, D.W. 1977. Evolution of phosphorus limitation in lakes. Science 195:260-262</p>
+<p>Schipper, J. et al. 2008. The status of the World’s land and marine mammals : diversity, threat and knowledge. Science 322:225-230</p>
+<p>Schluter, D. 1988. The evolution of finch communities on islands and continents: Kenya vs. Galapagos. Ecological Monographs 58:230-249</p>
+<p>Schluter, D. &amp; McPhail, J.D. 1992. Ecological character displacement and speciation in sticklebacks. The American Naturalist 140:85-108</p>
+<p>Schoener, T.W. 1971. Theory of Feeding Strategies. Annual Review of Ecology and Systematics 2:369-40</p>
+<p>Schoener, T.W. 1976. Alternatives to Lotka-Volterra competition: models of intermediate complexity. Theoretical Population Biology 10:309-333</p>
+<p>Schoener, T.W. 1989. Food webs from the small to the large. Ecology 70:1559-1589</p>
+<p>Shaffer, M.L. 1981. Minimum Population Sizes for Species Conservation. BioScience 31:131-134</p>
+<p>Shea, K.; Chesson, P. 2002. Community ecology theory as a framework for biological invasions. Trends in Ecology &amp; Evolution 17:170-176</p>
+<p>Shurin, J.B.; Gruner, D.S.; Hillebrand, H. 2006. All wet or dried up? Real differences between aquatic and terrestrial food webs. Proceedings of the Royal Society B 273:42248</p>
+<p>Simberloff, D.S. et al. 1969. Experimental Zoogeography of Islands : The Colonization of Empty Islands. Ecology 50:278-296</p>
+<p>Simberloff, D. 1983. Competition theory, hypothesis-testing, and other community ecological buzzwords. The American Naturalist 5:626-635</p>
+<p>Sousa, W. 1979. Disturbance in Marine Intertidal Boulder Fields: the Nonequilibrium Maintenance of Species Diversity. Ecology 60:1225-1239</p>
+<p>Southwood, T.R.E. 1961. The number of insect species associated with various trees. Journal of Animal Ecology 30:1?8</p>
+<p>Stearns, S.C. 1976. Life-history tactics: a review of the ideas. The Quarterly Review of Biology 51:3</p>
+<p>Stenseth, N.C. 1997. Population regulation in snowshoe hare and Canadian lynx: asymmetric food web configurations between hare and lynx. Proceedings of the National Academy of Sciences of the United States of America 94:5147-5152</p>
+<p>Strayer, D. 1988. On the limits to secondary production. Limnology and Oceanography 33:1217-1220</p>
+<p>Sugihara, G. et al. 2012. Detecting Causality in Complex Ecosystems. Science 338:496-500</p>
+<p>Sutherland, W.J. et al. 2006. The identification of 100 ecological questions of high policy relevance in the UK. Journal of Applied Ecology 43:617-627</p>
+<p>Sutherland, W.J. et al. 2013. Identification of 100 fundamental ecological questions. Journal of Ecology 101:58-67</p>
+<p>Svenning, J-C.; Sandel, B. 2013. Disequilibrium vegetation dynamics under future climate change. American Journal of Botany 100:1266-1286</p>
+<p>Thompson, J.D. et al. 1996. Untangling multiple factors in spatial distributions: Lilies, Gophers, and rocks. Ecology 77:1698-1715</p>
+<p>Thompson, J. N. 1999. The evolution of species interactions. Science 284:2116-2118</p>
+<p>Thuiller, W. et al. 2005. Climate change threats to plant diversity in Europe. Proceedings of the National Academy of Sciences of the United States of America 102:8245-8250</p>
+<p>Tilman, D.; Wedin, D.; Knops, J. 1996. Productivity and sustainability influenced by biodiversity in grassland ecosystems. Nature 379:718-720</p>
+<p>Tilman, D. et al. 1997. The Influence of Functional Diversity and Composition on Ecosystem Processes. Science 277:1300-1302</p>
+<p>Tinbergen, N. 1963. On aims and methods of ethology. Zeitschrift f?r Tierpsychologie 20:410-433</p>
+<p>Titman, D. 1976. Ecological competition between algae: experimental confirmation of resource-based competition theory. Science 192:463-465</p>
+<p>Trivers R.L. &amp; Willard D.E. 1973. Natural Selection of Parental Ability to Vary the Sex Ratio of Offspring. Science 179:90-92</p>
+<p>Underwood, A.J.; Chapman, M.G.; Connell, S.D. 2000. Observations in ecology: you can’t make progress on processes without understanding the patterns. Journal of Experimental Marine Biology and Ecology 250:97-115</p>
+<p>Van der Putten, W.H. et al. 2013. Plant-soil feedbacks: the past, the present and future challenges. Journal of Ecology 101:265-276</p>
+<p>Van Valen, L. 1965. Morphological Variation and Width of Ecological Niche. The American Naturalist 99:377-390</p>
+<p>Van Valen, L. 1973. A new evolutionary law. Evolutionary Theory 1:10959</p>
+<p>Varley, G.C. 1947. The natural control of population balance in the knapweed gall-fly (Urophora jaceana). The Journal of Animal Ecology 16:139-187</p>
+<p>Vernadsky, W.I. 1945. The biosphere and the no?sphere. American Scientist 33:787-798</p>
+<p>Violle, C. et al. 2007. Let the concept of trait be functional- Oikos 116:882-892</p>
+<p>Vitousek, P.M. 1994. Beyond global warming: ecology and global change. Ecology 75:1861-1876</p>
+<p>Vitousek, P.M. et al. 1997b. Human Domination of Earth’s Ecosystems. Science 277:494-499</p>
+<p>Vitousek, P.M.; Howarth, R.W. 1991. Nitrogen Limitation on Land and in the Sea : How Can It Occur ? Biogeochemistry 13:87-115</p>
+<p>Volkov, I. et al. 2003. Neutral theory and relative species abundance in ecology. Nature 424:1035-1037</p>
+<p>Wade, M.J.; Susan K. 1990. The causes of natural selection. Evolution 44:1947-1955</p>
+<p>Wardle, D. et al. 2011. Terrestrial ecosystem responses to species gains and losses. Science 332:1273-1278</p>
+<p>Watt, A.S. 1947. Pattern and process in the plant community. The Journal of Ecology 53:44562</p>
+<p>Watts, D.J.; Strogatz, S.H. 1998. Collective dynamics of ‘small-world’ networks. Nature 393:440-442</p>
+<p>Weatherhead, P.J. 1986. How unusual are unusual events? The American Naturalist 128:526-543</p>
+<p>Weaver, W. 1948. Science and complexity. American Scientist 36:536-544</p>
+<p>Webb, C.O. et al. 2002. Phylogenies and community ecology. Annual Review of Ecology and Systematics 33:475?505</p>
+<p>Weissgerber, T.L. et al. 2015. Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm. PLOS Biology 13:e1002128</p>
+<p>Werner, E.E. &amp; Hall D.J. 1974. Optimal foraging and size selection of prey by bluegill sunfish (Lepomis macrochirus). Ecology 55:1042-1052</p>
+<p>Westoby, M.; Wright, I.J. 2006. Land-plant ecology on the basis of functional traits. Trends in Ecology &amp; Evolution 21:261-268</p>
+<p>White, T.C.R. 2008. The role of food, weather and climate in limiting the abundance of animals. Biological Reviews 83:227-248</p>
+<p>Whittaker, R.H. 1972. Evolution and measurement of species diversity. Taxon 21:213-251</p>
+<p>Wiens, J.A. 1989. Spatial scaling in ecology. Functional ecology 3:385-397</p>
+<p>Wilbur, H.M. 1997. Experimental ecology of food webs: complex systems in temporary ponds. Ecology 78:2279-2302</p>
+<p>Wiens, J.J.; Donoghue, M.J. 2004. Historical biogeography, ecology and species richness. Trends in Ecology &amp; Evolution 19:639-44</p>
+<p>Wilder, S.M.; Raubenheimer, D.; Simpson, S.J. 2015. Moving Beyond Body Condition Indices as an Estimate of Fitness in Ecological and Evolutionary Studies. Functional Ecology <a href="doi:10.1111/1365-2435.12460" class="uri">doi:10.1111/1365-2435.12460</a></p>
+<p>Williams, G.C. 1957. Pleiotropy, natural selection, and the evolution of senescence. Evolution 11:398?411</p>
+<p>Worm, B. et al. 2009. Rebuilding Global Fisheries. Science 325:578-585</p>
+<p>Wright, I.J. et al. 2004. The worldwide leaf economics spectrum. Nature 428:821-827</p>
+<p>Wright, S. 1934. The method of Path Coefficients. The annals of Mathematical Statistics 5:161-215</p>
+<p>Yoccoz, N.G.; Nichols, J.D.; Boulinier, T. 2001. Monitoring of biological diversity in space and time. Trends in Ecology &amp; Evolution 16:446-453</p>
+<p>Zinke, P.J. 1962. The Pattern of Influence of Individual Forest Trees on Soil Properties. Ecology 43:130-133</p>
+<div id="statistical-and-other-readings" class="section level3">
+<h3>Statistical and other readings</h3>
+<div id="statistical-foundations" class="section level4">
+<h4>Statistical foundations</h4>
+<p>Norman, G.R. and D.L. Streiner. 2014. Biostatistics: the bare essentials, 4th ed. People’s Medical Publishing House</p>
+<p>Gotelli, N.J. and A.M. Ellison. 2012. A primer of ecological statistics, 2nd ed. Sinauer</p>
+<p>Abelson, R.P. 1995. Statistics as principled argument. Lawrence Erlbaum Associates, Hillsdale, NJ.</p>
+</div>
+<div id="a-bit-beyond-the-foundations" class="section level4">
+<h4>A bit beyond the foundations</h4>
+<p>Shipley, B. 2016. Cause and Correlation in Biology: A User’s Guide to Path Analysis, Structural Equations and Causal Inference, 2nd ed. Cambridge</p>
+<p>Dobson, A.J. 2011 and A Barnett. An Introduction to Generalized Linear Models, Third Edition. Chapman and Hall</p>
+<p>Fox, G.A. 2015. Ecological Statistics Contemporary theory and application. Oxford</p>
+</div>
+<div id="bayes" class="section level4">
+<h4>Bayes</h4>
+<p>Kruschke, J. 2014. Doing Bayesian Data Analysis, Second Edition: A Tutorial with R, JAGS, and Stan. Academic Press</p>
+<p>Kery, M. 2010. Introduction to WinBUGS for Ecologists: Bayesian approach to regression, ANOVA, mixed models and related analyses. Academic Press</p>
+<p>McElreath, R. 2015. Statistical Rethinking: A Bayesian Course with Examples in R and Stan. Chapman and Hall</p>
+</div>
+<div id="ecological-modelling" class="section level4">
+<h4>Ecological modelling</h4>
+<p>Gotelli, N. 2008. A Primer of Ecology, 4th ed. Sinaeur</p>
+<p>Otto, S.P., and T. Day. 2007. A Biologist’s Guide to Mathematical Modeling in Ecology and Evolution. Princeton</p>
+<p>Bolker, B.M. 2008. Ecological Models and Data in R. Princeton</p>
+</div>
+<div id="useful-encyclopedias" class="section level4">
+<h4>Useful encyclopedias</h4>
+<p>Levin et al. eds. 2012. The Princeton Guide to Ecology. Princeton</p>
+<p>Losos et al. eds. 2013. The Princeton Guide to Evolution. Princeton</p>
+<p>Hastings, A. and L. Gross. 2012. Encyclopedia of Theoretical Ecology. UC Press</p>
+</div>
+<div id="general-interest-and-for-fun" class="section level4">
+<h4>General interest and for fun</h4>
+<p>Mlowdinow, L. 2008. The Drunkard’s Walk: How Randomness Rules Our Lives. Random House.</p>
+<p>Silver, N. 2013. The Signal and the Noise: Why So Many Predictions Fail — but Some Don’t. Penguin.</p>
+<p>Haigh, J. 1999. Taking Chances: Winning with Probability. Oxford.</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Intro to EECB 703\"\noutput: \n  html_document: \n    theme: sandstone\n    toc: yes\n    toc_float: yes\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n## Principles of Ecology, Evolution & Conservation Biology\n\nWelcome to EECB 703!\n\nDuring Fall 2017, we will meet *Tuesdays from noon-3pm in FA300G*.\n\n### Course structure\n\nClass meets once per week for 3 hours. The first and second hours are often taken up by guest lectures delivered by various [EECB faculty](https://www.unr.edu/eecb/people/). The final hour (or sometimes two) of class is devoted to student-led discussions in response to the lecture(s), readings, and study questions.\n\n#### Student-led discussions\nFor discussions, we will break into small groups (pre-assigned). Each discussion group will have a designated discussion leader and a designated note-taker. The discussion leader will be responsible for keeping the discussion on-track, making sure all study questions are addressed, and raising new questions. The note-taker will be responsible for summarizing each group's discussion and updating the master Google Docs (EECB 703 study guide) to reflect what was discussed, and what new questions were raised. All other group members are responsible for contributing to the group discussions, but have no formal assigned role. \n\n### Missing class\nEECB students often have fieldwork and other research-related responsibilities. I understand that research is your first priority and will make every effort to accommodate your needs. If you know you will need to miss class, please notify your instructor at least 2 weeks in advance!\n\nThis course is driven by student participation, and I expect everyone to participate. \n\nIf you are out of town, I encourage you to participate in lectures and group discussions via videoconference if at all possible.  \n\nIf you have to miss lecture/discussion, I expect you to contact members of your assigned discussion group for an update on the discussion topic. I also expect you to contribute substantially to the EECB 703 study guide (online, Google Docs). \n\n### The new EECB comprehensive exam\nThis class is meant to give you a head start in studying for the new comprehensive exam. The topics covered in this course are the topics you will be expected to know for the exam. The study questions in this course are a subset of the study questions for the comprehensive exam. \n\n## Questions?\n\n\n## Course resources\n\n    - [**Syllabus**](index.html)\n    - [**Required readings**](Readings.html)\n    - [**Study questions**](Questions.html)\n    - [**Other recommended readings**](Recommended_readings.html)\n    - [**Stats books and related resources**](Links.html)\n    - [**Calendar**](Calendar.html)\n\n\n\n\n\n",
+    "created" : 1501880825979.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3438568440",
+    "id" : "3DB288F",
+    "lastKnownWriteTime" : 1502055561,
+    "last_content_update" : 1502055561415,
+    "path" : "E:/GIT/EECB-703/INTRO.Rmd",
+    "project_path" : "INTRO.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

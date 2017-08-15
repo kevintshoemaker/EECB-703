@@ -1,0 +1,32 @@
+---
+title: "Intro to EECB 703"
+output: 
+  html_document: 
+    theme: sandstone
+    toc: yes
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Principles of Ecology, Evolution & Conservation Biology
+
+Welcome to EECB 703!
+
+During Fall 2017, we will meet Tuesdays from noon-3pm in FA300G.
+
+    - [**Syllabus**](index.html)
+    - [**Required readings**](readings.html)
+    - [**Study questions**](Questions.html)
+    - [**Other recommended readings**](recommended_readings.html)
+    - [**Stats books and related resources**](Links.html)
+    - [**Calendar**](calendar.html)
+
+
+[--go to next lecture--](LECTURE1.html)
+
+
+
+

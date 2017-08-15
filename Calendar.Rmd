@@ -1,0 +1,182 @@
+---
+title: "EECB 703 Calendar"
+output: 
+  html_document: 
+    theme: sandstone
+    toc: yes
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# CALENDAR OF TOPICS AND SPEAKERS
+
+The course calendar is available as a Google Calendar: [link](https://calendar.google.com/calendar/embed?src=1pfst79qqq79vbsl5orfv96f6s%40group.calendar.google.com&ctz=America/Los_Angeles)
+
+## Aug 29
+
+Course overview, syllabus, etc.
+
+## Sep 5
+
+### Behavioral Ecology, Dr. Vladimir Pravosudov
+
+### Diversity and Neutral Models, Dr. Lee Dyer
+
+Discussion groups as follows. The person first in each list will be the discussion group leader. The last person in each list will be the designated note-taker (responsible for updating the [study guide](https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing))     
+
+1. 
+2. 
+3. 
+
+## Sep 12
+
+### Diseases of wild populations, Dr. Jamie Voyles
+
+
+### Specialization & niche dynamics, Dr. Matt Forister    
+  
+1. 
+2. 
+3. 
+
+## Sep 19
+
+### Population ecology, Dr. Kevin Shoemaker
+
+### Population genetics, Dr. Marjorie Matocq
+  
+1. 
+2. 
+3. 
+
+
+## Sep 26
+
+### Mathematical models for EECB, Dr. Paul Hurtado
+
+### Landscape Ecology, Dr. Peter Weisberg
+
+  
+1. 
+2. 
+3. 
+
+
+
+## Oct 3
+
+### Soil Ecology, Dr. Ben Sullivan
+
+### Microbial Ecology, Dr. David Vuono
+
+
+  
+## Oct 10
+
+### Ecoimmunology, Dr. Angela Smilanich
+
+### Physiological ecology, Dr. Jack Hayes
+
+  
+1. 
+2. 
+3. 
+
+## Oct 17
+
+### Community ecology, Dr. Beth Pringle
+
+### Applied evolution, Dr. Beth Leger
+    
+  
+1. 
+2. 
+3. 
+
+
+## Oct 24
+
+### Phenotypic Plasticity, Dr. Jenny Ouyang
+
+### Chemical Ecology, Dr. Lora Robinson
+  
+1. 
+2. 
+3. 
+
+
+## Oct 31
+
+### Species & speciation, Dr. Matt Forister
+
+### Paleoecology, Dr. Scott Mensing
+  
+1. 
+2. 
+3. 
+
+## Nov 7
+
+### Philosophy of Biology, Dr. Carlos Mariscal
+
+### Genomic variation & architecture, Dr. Tom Parchman
+  
+1. 
+2. 
+3. 
+
+## Nov 14
+
+### Comparative genomics & gene evolution, Dr. David Alvarez-Ponce   
+
+### Ecological & evolutionary epigenetics, Dr. David Zeh
+  
+1. 
+2. 
+3. 
+
+## Nov 21
+
+### Conservation Biology and Ecosystem Management, Dr. Sudeep Chandra
+
+### ???
+    
+  
+1. 
+2. 
+3. 
+
+## Nov 28
+
+### Global Change and Conservation, Dr. Ken Nussear
+  
+1. 
+2. 
+3. 
+
+## Dec 5
+
+### Final Study Session
+  
+1. 
+2. 
+3. 
+
+
+## Dec 12
+### Final exam
+noon-3pm     
+location TBA   
+closed book; 10 short essays, ~300 words each, with questions chosen from a pool constructed as follows: from each of the 25 topics, I will pick 2 questions (so you'll see a list of 50 questions); I'll divide that list roughly into three parts (beginning, middle and end of the semester), and you'll have to pick 3 questions from the first, 4 questions from the middle and 3 questions from the end. 
+
+In other words, you have a ton of choice, but you also can't completely ignore some section of the course! 
+
+Although the exam is "closed book" and closed-internet, you can bring one sheet (8.5 x 11) of written notes, with writing on front and back.
+
+
+
+
+

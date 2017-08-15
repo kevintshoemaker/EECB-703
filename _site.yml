@@ -1,0 +1,24 @@
+name: "EECB_703"
+output_dir: "."
+navbar:
+  title: "EECB 703"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Syllabus"
+      href: Syllabus.pdf
+    - text: "Calendar"
+      href: Calendar.html
+    - text: "Readings/Questions"
+      href: https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing
+    - text: "Study Guide"
+      href: https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing
+    - text: "Overview Lectures"
+      menu:
+        - text: "Introduction to EECB 703"
+          href: INTRO.html
+        - text: "Behavioral Ecology"
+          href: LECTURE1.html
+    - text: "Links"
+      href: Links.html
+      
