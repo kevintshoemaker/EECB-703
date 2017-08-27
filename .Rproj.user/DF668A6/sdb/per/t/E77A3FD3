@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Links\"\nauthor: \"EECB 703\"\ndate: \"August 23, 2016\"\noutput: \n  html_document: \n    theme: sandstone\n    toc: yes\n    toc_float: yes\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\nPlease let me know if there are other links that you think should be included on this page!\n\nFor a list of recommended readings, [click here](https://docs.google.com/document/d/1abROOZrJCf9TY8q-IwiloudRyZXjmlQQcVOvCICWnII/edit)    \n\nFor a list of stats books and related resources, [click here](https://docs.google.com/document/d/1zuOoY-LupAtnnXIt8qS4Qw3Owm4sss9OIAHfug8QqYI/edit)\n\n\n## Software  \n\n- [R- free statistical programming language](https://cran.r-project.org/)\n\n[Weekly math/bio \"Stats chats\"](https://kevintshoemaker.github.io/StatsChats/)\n\n\n",
+    "created" : 1501880834703.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4264623974",
+    "id" : "E77A3FD3",
+    "lastKnownWriteTime" : 1503869315,
+    "last_content_update" : 1503869315206,
+    "path" : "E:/GIT/EECB-703/Links.Rmd",
+    "project_path" : "Links.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

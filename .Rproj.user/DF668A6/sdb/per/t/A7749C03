@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Discussion Groups, Fall 2017\"\nauthor: \"EECB 703\"\ndate: \"August 23, 2017\"\noutput: \n  html_document: \n    theme: sandstone\n    toc: no\n    toc_float: no\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n\n```{r include=FALSE}\ncourseSchedule <- read.csv(\"AllGroups.csv\")\n```\n\n```{r results='asis', echo=FALSE}\nknitr::kable(courseSchedule,caption=\"\")\n```\n\n\n\n\n```{r eval=F, echo=F}\n#### Script for randomizing names.\n\nclass.list <- c(\n  \"Alison Agneray\",\n  \"Nathan Cook\",\n  \"Aramee Diethelm\",\n  \"Micaela Enger\",\n  \"Danielle Miles\",\n  \"Adriana Parra\",\n  \"Gabriela Rios-Sotelo\",\n  \"Benjamin Sonnenberg\",\n  \"Margarete Walden\",\n  \"Jamey Wilcher\"\n)\n\nN_GROUPS <- 2\nN_WEEKS <- 13\nN_STUDENTS <- length(class.list)\n\n## first randomize the list\n\nrand.list <- sample(class.list,N_STUDENTS,replace=F)\n\ndisc.leaders <- rep(rand.list,10)[rep_len(rep(1:N_STUDENTS,10),length.out=N_WEEKS*N_GROUPS)]\nnote.takers <- rep(rand.list[c(6:N_STUDENTS,1:5)],10)[rep_len(rep(1:N_STUDENTS,10),length.out=N_WEEKS*N_GROUPS)]\n\ndisc.groups <- list()\n\ni=1\nfor(i in 1:N_WEEKS){\n  disc.groups[[i]] <- array(NA,dim=c(N_GROUPS,ceiling(N_STUDENTS/N_GROUPS)))\n  disc.groups[[i]][,1] <- disc.leaders[((i*2)-1):(i*2)]\n  disc.groups[[i]][,2] <- note.takers[((i*2)-1):(i*2)]\n  not <- as.vector(disc.groups[[i]][,c(1,2)])\n  disc.groups[[i]][,-c(1,2)] <- sample(setdiff(class.list,not),N_STUDENTS-4,replace=F)\n\n}\n\n### print out master discussion groups:\n\nmasterdf <- data.frame(\n  Week = rep(c(1:N_WEEKS),each=N_GROUPS),\n  Group = rep(c(1:N_GROUPS),times=N_WEEKS)\n)\n\n# refactor the list\n\ntemp <- matrix(NA,nrow=N_WEEKS*N_GROUPS,ncol=ceiling(N_STUDENTS/N_GROUPS))\ni=1\nfor(i in 1:N_WEEKS){\n  temp[((i*2)-1):(i*2),] <- disc.groups[[i]]\n}\n\nmasterdf <- cbind(masterdf,temp)\n\nnames(masterdf) <- c(\"Week\",\"Group\",\"Leader\",\"Note-taker\",\"P3\",\"P4\",\"P5\")\n\nmasterdf$Group <- toupper(letters[masterdf$Group])\n\nmasterdf\n\nsetwd(\"E:\\\\GIT\\\\EECB-703\")\n\nwrite.csv(masterdf,\"AllGroups.csv\",row.names=F)\n\n```\n\n\n\n",
+    "created" : 1503865273525.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1585544547",
+    "id" : "A7749C03",
+    "lastKnownWriteTime" : 1503866425,
+    "last_content_update" : 1503866425490,
+    "path" : "E:/GIT/EECB-703/allgroups.Rmd",
+    "project_path" : "allgroups.Rmd",
+    "properties" : {
+        "last_setup_crc32" : "6F23F316bb338d19"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

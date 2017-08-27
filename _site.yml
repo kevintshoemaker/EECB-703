@@ -9,6 +9,8 @@ navbar:
       href: Syllabus.pdf
     - text: "Calendar"
       href: Calendar.html
+    - text: "Discussion Groups"
+      href: allgroups.html
     - text: "Readings/Questions"
       href: https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing
     - text: "Study Guide"
@@ -18,7 +20,7 @@ navbar:
         - text: "Introduction to EECB 703"
           href: INTRO.html
         - text: "Behavioral Ecology"
-          href: LECTURE1.html
+          href: BH_LECTURE1.pptx
     - text: "Links"
       href: Links.html
       

@@ -1,0 +1,97 @@
+---
+title: "Discussion Groups, Fall 2017"
+author: "EECB 703"
+date: "August 23, 2017"
+output: 
+  html_document: 
+    theme: sandstone
+    toc: no
+    toc_float: no
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r include=FALSE}
+courseSchedule <- read.csv("AllGroups.csv")
+```
+
+```{r results='asis', echo=FALSE}
+knitr::kable(courseSchedule,caption="")
+```
+
+
+
+
+```{r eval=F, echo=F}
+#### Script for randomizing names.
+
+class.list <- c(
+  "Alison Agneray",
+  "Nathan Cook",
+  "Aramee Diethelm",
+  "Micaela Enger",
+  "Danielle Miles",
+  "Adriana Parra",
+  "Gabriela Rios-Sotelo",
+  "Benjamin Sonnenberg",
+  "Margarete Walden",
+  "Jamey Wilcher"
+)
+
+N_GROUPS <- 2
+N_WEEKS <- 13
+N_STUDENTS <- length(class.list)
+
+## first randomize the list
+
+rand.list <- sample(class.list,N_STUDENTS,replace=F)
+
+disc.leaders <- rep(rand.list,10)[rep_len(rep(1:N_STUDENTS,10),length.out=N_WEEKS*N_GROUPS)]
+note.takers <- rep(rand.list[c(6:N_STUDENTS,1:5)],10)[rep_len(rep(1:N_STUDENTS,10),length.out=N_WEEKS*N_GROUPS)]
+
+disc.groups <- list()
+
+i=1
+for(i in 1:N_WEEKS){
+  disc.groups[[i]] <- array(NA,dim=c(N_GROUPS,ceiling(N_STUDENTS/N_GROUPS)))
+  disc.groups[[i]][,1] <- disc.leaders[((i*2)-1):(i*2)]
+  disc.groups[[i]][,2] <- note.takers[((i*2)-1):(i*2)]
+  not <- as.vector(disc.groups[[i]][,c(1,2)])
+  disc.groups[[i]][,-c(1,2)] <- sample(setdiff(class.list,not),N_STUDENTS-4,replace=F)
+
+}
+
+### print out master discussion groups:
+
+masterdf <- data.frame(
+  Week = rep(c(1:N_WEEKS),each=N_GROUPS),
+  Group = rep(c(1:N_GROUPS),times=N_WEEKS)
+)
+
+# refactor the list
+
+temp <- matrix(NA,nrow=N_WEEKS*N_GROUPS,ncol=ceiling(N_STUDENTS/N_GROUPS))
+i=1
+for(i in 1:N_WEEKS){
+  temp[((i*2)-1):(i*2),] <- disc.groups[[i]]
+}
+
+masterdf <- cbind(masterdf,temp)
+
+names(masterdf) <- c("Week","Group","Leader","Note-taker","P3","P4","P5")
+
+masterdf$Group <- toupper(letters[masterdf$Group])
+
+masterdf
+
+setwd("E:\\GIT\\EECB-703")
+
+write.csv(masterdf,"AllGroups.csv",row.names=F)
+
+```
+
+
+

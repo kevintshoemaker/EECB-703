@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 **Course Website**: [naes.unr.edu/shoemaker/teaching/EECB-703](http://naes.unr.edu/shoemaker/teaching/EECB-703/index.html)
 
-**Texts**: Readings from the primary literature (see [Google Doc](https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing))
+**Texts**: Readings from the primary literature (see [course calendar](Calendar.html) and this [Google Doc](https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing))
 
 
 ### Class description 
@@ -50,7 +50,7 @@ Your grade for this course will be based on the following:
 The final exam will consist of short essay questions reflecting the diversity of material covered.
 
 ### Participation
-As discussed above, a major learning objective of this course is to develop skills in critical thinking and communication. The ability to intelligently discuss challenging issues is essential to success in graduate school, and my aim is to give you a jump start with this course. Come prepared every day to contribute. 
+As discussed above, a major learning objective of this course is to develop skills in critical thinking and communication. The ability to intelligently discuss challenging issues is essential to success in graduate school, and out aim is to give you a jump start with this course. Come prepared every day to contribute. 
 
 ### Readings
 The majority of the readings you will do in this class will be from the primary literature, as listed on the ["Readings and Questions" document](https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing) on a weekly basis. You can expect to read approx. 4 papers per week. You are expected to seek out any additional references for areas that you feel you need help with. 

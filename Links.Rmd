@@ -1,10 +1,10 @@
 ---
 title: "Links"
-author: "NRES 746"
+author: "EECB 703"
 date: "August 23, 2016"
 output: 
   html_document: 
-    theme: spacelab
+    theme: sandstone
     toc: yes
     toc_float: yes
 ---
@@ -15,11 +15,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Please let me know if there are other links that you think should be included on this page!
 
+For a list of recommended readings, [click here](https://docs.google.com/document/d/1abROOZrJCf9TY8q-IwiloudRyZXjmlQQcVOvCICWnII/edit)    
+
+For a list of stats books and related resources, [click here](https://docs.google.com/document/d/1zuOoY-LupAtnnXIt8qS4Qw3Owm4sss9OIAHfug8QqYI/edit)
+
+
 ## Software  
 
-- [InsightMaker- free web-based systems modeling tool](https://insightmaker.com/)    
 - [R- free statistical programming language](https://cran.r-project.org/)
-- [Program MARK](http://warnercnr.colostate.edu/~gwhite/mark/mark.htm)
 
 [Weekly math/bio "Stats chats"](https://kevintshoemaker.github.io/StatsChats/)
 

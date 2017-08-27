@@ -11,30 +11,46 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# CALENDAR OF TOPICS AND SPEAKERS
+# CALENDAR OF TOPICS, SPEAKERS AND READINGS
 
-The course calendar is available as a Google Calendar: [link](https://calendar.google.com/calendar/embed?src=1pfst79qqq79vbsl5orfv96f6s%40group.calendar.google.com&ctz=America/Los_Angeles)
+The course calendar is also available as a Google Calendar: [link](https://calendar.google.com/calendar/embed?src=1pfst79qqq79vbsl5orfv96f6s%40group.calendar.google.com&ctz=America/Los_Angeles)
+
+Discussion groups can be found [here](allgroups.html). The person first in each list will be the discussion group leader. The second person in each list will be the designated note-taker (responsible for updating the [study guide](https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing)). All group members are expected to participate every week.
+
+For the official list of readings and questions, [click here](https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit#)
 
 ## Aug 29
 
-Course overview, syllabus, etc.
+[Course overview, syllabus, etc.](INTRO.html)
 
 ## Sep 5
 
 ### Behavioral Ecology, Dr. Vladimir Pravosudov
 
+[Trivers, R. L. (1974). Parent-offspring conflict. American zoologist, 14(1), 249-264.](Trivers - 1974 - Parent-offspring conflict.pdf)
+
+[Zahavi, A. (1975). Mate selection—a selection for a handicap. Journal of theoretical Biology, 53(1), 205-214.](Zahavi - 1975 - Mate selection—a selection for a handicap.pdf)
+
+[Davis, J. M., & Stamps, J. A. (2004). The effect of natal experience on habitat preferences. Trends in Ecology & Evolution, 19(8), 411-416.](Davis and Stamps - 2004 - The effect of natal experience on habitat preferen.pdf)
+
+
 ### Diversity and Neutral Models, Dr. Lee Dyer
 
-Discussion groups as follows. The person first in each list will be the discussion group leader. The last person in each list will be the designated note-taker (responsible for updating the [study guide](https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing))     
+[Chave, J. (2004). Neutral theory and community ecology. Ecology letters, 7(3), 241-253.](Chave - 2004 - Neutral theory and community ecology Neutral theo.pdf)
 
-1. 
-2. 
-3. 
+[Kraft, N.J., Comita, L.S., Chase, J.M., Sanders, N.J., Swenson, N.G., Crist, T.O., Stegen, J.C., Vellend, M., Boyle, B., Anderson, M.J. and Cornell, H.V., 2011. Disentangling the drivers of β diversity along latitudinal and elevational gradients. Science, 333(6050), pp.1755-1758.](Kraft et al. - 2011 - Disentangling the Drivers of β Diversity Along Lat.pdf)
+
+Recommended but not required:
+[Schemske, D. W., Mittelbach, G. G., Cornell, H. V., Sobel, J. M., & Roy, K. (2009). Is there a latitudinal gradient in the importance of biotic interactions?. Annu. Rev. Ecol. Evol. Syst., 40, 245-269.](Schemske et al. - 2009 - Is There a Latitudinal Gradient in the Importance .pdf)
+ 
 
 ## Sep 12
 
 ### Diseases of wild populations, Dr. Jamie Voyles
 
+1. 
+2. 
+3. 
 
 ### Specialization & niche dynamics, Dr. Matt Forister    
   
@@ -46,6 +62,10 @@ Discussion groups as follows. The person first in each list will be the discussi
 
 ### Population ecology, Dr. Kevin Shoemaker
 
+1. 
+2. 
+3. 
+
 ### Population genetics, Dr. Marjorie Matocq
   
 1. 
@@ -56,6 +76,10 @@ Discussion groups as follows. The person first in each list will be the discussi
 ## Sep 26
 
 ### Mathematical models for EECB, Dr. Paul Hurtado
+
+1. 
+2. 
+3. 
 
 ### Landscape Ecology, Dr. Peter Weisberg
 
@@ -70,13 +94,24 @@ Discussion groups as follows. The person first in each list will be the discussi
 
 ### Soil Ecology, Dr. Ben Sullivan
 
+1. 
+2. 
+3. 
+
 ### Microbial Ecology, Dr. David Vuono
 
+1. 
+2. 
+3. 
 
   
 ## Oct 10
 
 ### Ecoimmunology, Dr. Angela Smilanich
+
+1. 
+2. 
+3. 
 
 ### Physiological ecology, Dr. Jack Hayes
 
@@ -89,6 +124,10 @@ Discussion groups as follows. The person first in each list will be the discussi
 
 ### Community ecology, Dr. Beth Pringle
 
+1. 
+2. 
+3. 
+
 ### Applied evolution, Dr. Beth Leger
     
   
@@ -100,6 +139,10 @@ Discussion groups as follows. The person first in each list will be the discussi
 ## Oct 24
 
 ### Phenotypic Plasticity, Dr. Jenny Ouyang
+
+1. 
+2. 
+3. 
 
 ### Chemical Ecology, Dr. Lora Robinson
   
@@ -122,6 +165,10 @@ Discussion groups as follows. The person first in each list will be the discussi
 
 ### Philosophy of Biology, Dr. Carlos Mariscal
 
+1. 
+2. 
+3. 
+
 ### Genomic variation & architecture, Dr. Tom Parchman
   
 1. 
@@ -131,6 +178,10 @@ Discussion groups as follows. The person first in each list will be the discussi
 ## Nov 14
 
 ### Comparative genomics & gene evolution, Dr. David Alvarez-Ponce   
+
+1. 
+2. 
+3. 
 
 ### Ecological & evolutionary epigenetics, Dr. David Zeh
   
@@ -142,7 +193,11 @@ Discussion groups as follows. The person first in each list will be the discussi
 
 ### Conservation Biology and Ecosystem Management, Dr. Sudeep Chandra
 
-### ???
+1. 
+2. 
+3. 
+
+### Phylogenetics, Dr. Guy Hoelzer
     
   
 1. 
@@ -160,16 +215,12 @@ Discussion groups as follows. The person first in each list will be the discussi
 ## Dec 5
 
 ### Final Study Session
-  
-1. 
-2. 
-3. 
 
 
 ## Dec 12
 ### Final exam
-noon-3pm     
-location TBA   
+noon-3pm      
+location TBA     
 closed book; 10 short essays, ~300 words each, with questions chosen from a pool constructed as follows: from each of the 25 topics, I will pick 2 questions (so you'll see a list of 50 questions); I'll divide that list roughly into three parts (beginning, middle and end of the semester), and you'll have to pick 3 questions from the first, 4 questions from the middle and 3 questions from the end. 
 
 In other words, you have a ton of choice, but you also can't completely ignore some section of the course! 
