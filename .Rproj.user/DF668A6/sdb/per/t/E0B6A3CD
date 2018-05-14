@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "name: \"EECB_703\"\noutput_dir: \".\"\nnavbar:\n  title: \"EECB 703\"\n  left:\n    - text: \"Home\"\n      href: index.html\n    - text: \"Syllabus\"\n      href: Syllabus.pdf\n    - text: \"Calendar\"\n      href: Calendar.html\n    - text: \"Discussion Groups\"\n      href: allgroups.html\n    - text: \"Readings/Questions\"\n      href: https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing\n    - text: \"Study Guide\"\n      href: https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing\n    - text: \"Overview Lectures\"\n      menu:\n        - text: \"Introduction to EECB 703\"\n          href: INTRO.html\n        - text: \"Behavioral Ecology\"\n          href: BH_LECTURE1.pptx\n    - text: \"Links\"\n      href: Links.html\n      ",
+    "contents" : "name: \"EECB_703\"\noutput_dir: \".\"\nnavbar:\n  title: \"EECB 703\"\n  left:\n    - text: \"Home\"\n      href: index.html\n    - text: \"Syllabus\"\n      href: Syllabus.pdf\n    - text: \"Readings/Calendar\"\n      href: Calendar.html\n    - text: \"Discussion Groups\"\n      href: allgroups.html\n    - text: \"Study Questions\"\n      href: https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing\n    - text: \"Overview Lectures\"\n      menu:\n        - text: \"Introduction to EECB 703\"\n          href: INTRO.html\n        - text: \"Behavioral Ecology\"\n          href: BH_LECTURE1.pptx\n    - text: \"Links\"\n      href: Links.html\n      ",
     "created" : 1501880579734.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1010138996",
+    "hash" : "2754138391",
     "id" : "E0B6A3CD",
-    "lastKnownWriteTime" : 1503869149,
-    "last_content_update" : 1503869149656,
+    "lastKnownWriteTime" : 1504119136,
+    "last_content_update" : 1504119136740,
     "path" : "E:/GIT/EECB-703/_site.yml",
     "project_path" : "_site.yml",
     "properties" : {

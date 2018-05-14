@@ -1,0 +1,10 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+        ],
+        "path" : "E:/GIT/EECB-703",
+        "query" : "study guide",
+        "regex" : false
+    }
+}

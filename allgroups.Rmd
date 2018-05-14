@@ -15,14 +15,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r include=FALSE}
-courseSchedule <- read.csv("AllGroups.csv")
+courseSchedule <- read.csv("AllGroups2.csv")
 ```
 
 ```{r results='asis', echo=FALSE}
 knitr::kable(courseSchedule,caption="")
 ```
-
-
 
 
 ```{r eval=F, echo=F}

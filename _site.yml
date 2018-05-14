@@ -7,14 +7,12 @@ navbar:
       href: index.html
     - text: "Syllabus"
       href: Syllabus.pdf
-    - text: "Calendar"
+    - text: "Readings/Calendar"
       href: Calendar.html
     - text: "Discussion Groups"
       href: allgroups.html
-    - text: "Readings/Questions"
+    - text: "Study Questions"
       href: https://docs.google.com/document/d/1VkpM0Mn4-rWlnWKV_EqKXxwHbXxZWWWWC4jCEDZXlSY/edit?usp=sharing
-    - text: "Study Guide"
-      href: https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing
     - text: "Overview Lectures"
       menu:
         - text: "Introduction to EECB 703"

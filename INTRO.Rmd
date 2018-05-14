@@ -11,20 +11,32 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Principles of Ecology, Evolution & Conservation Biology
-
+# Principles of Ecology, Evolution & Conservation Biology
 Welcome to EECB 703!
 
-During Fall 2017, we will meet *Tuesdays from noon-3pm in FA300G*.
+During Fall 2017, we will meet *Tuesdays from noon-3pm in WRB 4051*.
 
-### Course structure
-
+## Course structure
 Class meets once per week for 3 hours. The first and second hours are often taken up by guest lectures delivered by various [EECB faculty](https://www.unr.edu/eecb/people/). The final hour (or sometimes two) of class is devoted to student-led discussions in response to the lecture(s), readings, and study questions.
 
-#### Student-led discussions
-For discussions, we will break into small groups (pre-assigned). Each discussion group will have a designated discussion leader and a designated note-taker. The discussion leader will be responsible for keeping the discussion on-track, making sure all study questions are addressed, and raising new questions. The note-taker will be responsible for summarizing each group's discussion and updating the master Google Docs (EECB 703 study guide) to reflect what was discussed, and what new questions were raised. All other group members are responsible for contributing to the group discussions, but have no formal assigned role. 
+## Guest lectures
+One of my primary roles in this course is facilitating guest lectures by numerous EECB faculty. Amazingly, nearly everyone accepted the invitation, so amazingly we have two guest lectures nearly every week!  
 
-### Missing class
+I will do my best to post all guest lectures on the website (or on webcampus, if the presenter wishes) on the day they are presented, so you can go back to the slides in your discussions. 
+
+## Student-led discussions
+For discussions, we will break into small groups (pre-assigned). Each discussion group will have a designated discussion leader and a designated note-taker. The discussion leader will be responsible for keeping the discussion on-track, making sure all study questions are addressed, and raising new questions. The note-taker will be responsible for summarizing each group's discussion and updating the EECB 703 study guide to reflect what was discussed, and what new questions were raised. All other group members are responsible for contributing to the group discussions, but have no formal assigned role. 
+
+## Online study guide
+The EECB 703 study guide (see link sent from WebCampus) will:
+
+* Summarize each group's discussion of the assigned readings
+* Summarize each group's discussion of the study questions
+* Document key questions raised by the readings and the study questions
+* Suggest key resources (websites, papers, blog posts) relevant to the discussion topic, or that help to make critical connections between topics.
+* Anything else that could be useful to you and your peers as you study for the final exam and the comprehensive exam!
+
+## Missing class
 EECB students often have fieldwork and other research-related responsibilities. I understand that research is your first priority and will make every effort to accommodate your needs. If you know you will need to miss class, please notify your instructor at least 2 weeks in advance!
 
 This course is driven by student participation, and I expect everyone to participate. 
@@ -33,8 +45,37 @@ If you are out of town, I encourage you to participate in lectures and group dis
 
 If you have to miss lecture/discussion, I expect you to contact members of your assigned discussion group for an update on the discussion topic. I also expect you to contribute substantially to the EECB 703 study guide (online, Google Docs). 
 
-### The new EECB comprehensive exam
-This class is meant to give you a head start in studying for the new comprehensive exam. The topics covered in this course are the topics you will be expected to know for the exam. The study questions in this course are a subset of the study questions for the comprehensive exam. 
+## The new EECB comprehensive exam
+This class is meant to give you a head start in studying for the new comprehensive exam. The topics covered in this course are the topics you will be expected to know for the exam. The study questions in this course are (whenever possible) a subset of the study questions for the comprehensive exam. Note that the EECB test bank is not yet formally established, but Note that, even if the study questions from this class are not part of the [comprehensive exam study guide](https://docs.google.com/document/d/15s5NQEHeFaAGj0h2xIQvuG06D5QvQtabmIDvYB-dBVk/edit?usp=sharing)(called a "test bank" in the EECB bylaws, below), these questions may appear on the comprehensive examination. **Discussing and writing on the study questions this course also doubles as studying for the comprehensive examination.** 
+
+The study questions for the standardized EECB exam is a long list (similar to what EECB students had many years ago in the previous iteration of the standardized exam). Although the list is long, when you start looking at individual questions you should find that many of the review topics cover stuff you learned as undergrads or that we will cover in Principles. **The exam in the Spring will be inspired by these questions, but not necessarily constrained by them.** (despite what is said in the EECB bylaws, below)
+
+In theory, faculty can add questions to this list at any time. I don't expect there will be a rush to do that, but if questions are added we will find a way to indicate which are new.
+
+Note that this format for the comprehensive exam is new, and that despite how formal the bylaws sound, changes are likely to be made. I am on the comprehensive exam committee, so please ask me if you have any questions about the exam- and I'll get you an answer one way or another!
+
+
+### Details on comprehensive exam
+
+(NOTE: this is copied directly from the [EECB bylaws](https://www.unr.edu/eecb/about/bylaws))
+
+EECB students are required to take a written and oral comprehensive examination. The written comprehensive exams will be offered over the course of two days every spring semester at a time determined at the beginning of each academic year. The schedule will be as follows:
+
+* Day 1, 8-11 AM, Ecology
+* Day 1, 1-4 PM, Evolution
+* Day 2, 8-11 AM, Conservation Biology
+* Day 2,1-4 PM, Quantitative Methods
+
+If the scheduled time of the exam (spring semester of the student's second year) conflicts with field work or travel, advisors may choose to reschedule the exam for a particular student during the fall semester of the same calendar year. The advisor in this case would have to work with the exam committee to have the exam created and processed in a fair way.
+
+Exams will draw from a [test bank](https://docs.google.com/document/d/15s5NQEHeFaAGj0h2xIQvuG06D5QvQtabmIDvYB-dBVk/edit?usp=sharing) as described below and will be closed book without notes or internet access. *For each of the 4 topics, students will choose 3 out of 5 questions*, with an optional modification based on specialized research interests, as described below. The written answers will be graded anonymously by a rotating exam committee of 5 EECB faculty to be appointed bi-annually by the director. This committee is also responsible for assembling and administering the exam each year. A student must retake any section that is failed and will have an option to do that in a test session every fall semester. Dates of make-up exams will be determined at the beginning of each fall semester. *Students must pass every section of the written exam to advance to candidacy.*
+
+#### Optional modification:
+For advisors and committees wishing to have students tested on more specialized content in the written exam, they may opt for students to have *2 tailored questions in each of the 4 subject areas*. The students will answer the specialized questions in addition to the general test bank questions. For example, for each subject area, the students would answer 3 out of 5 test bank questions and 1 out of 2 specialized questions. *Given the extra question for each section that the students must answer, they will be allowed 1 hour of extra time per additional question* (i.e. the exam period will be 8 AM - Noon or 1 - 5 PM). Advisors choosing this path must supply the specialized questions to the exam committee at the beginning of the academic year; if questions are not supplied, then students default to the full test bank plan with no specialized questions.
+
+#### Test bank details:
+The bank of questions for written comprehensive exams will be a public resource. Any EECB faculty can contribute to the bank, and students will be able to see the bank throughout their first two years as they prepare for the written exam. They will be first exposed to the bank of questions during Principles of EECB, a course that they will have taken during their first year. A subset of test bank questions will form the final exam for Principles of EECB, while the full test bank will be used to formulate the written exam.
+The expectation for depth and quality of answers is higher for the comprehensive written exam as compared to the Principles of EECB final exam. Complete details about the test bank are specified [here](https://docs.google.com/document/d/15s5NQEHeFaAGj0h2xIQvuG06D5QvQtabmIDvYB-dBVk/edit?usp=sharing).
 
 ## Questions?
 

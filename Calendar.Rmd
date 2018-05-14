@@ -1,5 +1,5 @@
 ---
-title: "EECB 703 Calendar"
+title: "EECB 703 Readings/Calendar"
 output: 
   html_document: 
     theme: sandstone
@@ -11,9 +11,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# CALENDAR OF TOPICS, SPEAKERS AND READINGS
 
-The course calendar is also available as a Google Calendar: [link](https://calendar.google.com/calendar/embed?src=1pfst79qqq79vbsl5orfv96f6s%40group.calendar.google.com&ctz=America/Los_Angeles)
+**The course calendar is also available as a Google Calendar:** [link](https://calendar.google.com/calendar/embed?src=1pfst79qqq79vbsl5orfv96f6s%40group.calendar.google.com&ctz=America/Los_Angeles)
 
 Discussion groups can be found [here](allgroups.html). The person first in each list will be the discussion group leader. The second person in each list will be the designated note-taker (responsible for updating the [study guide](https://docs.google.com/document/d/1qn6WsiXiIBTktnpOW7EbHkpYNdjtE2FKPztTRpvMPYg/edit?usp=sharing)). All group members are expected to participate every week.
 
@@ -48,169 +47,247 @@ Recommended but not required:
 
 ### Diseases of wild populations, Dr. Jamie Voyles
 
-1. 
-2. 
-3. 
+[Keesing, F., Holt, R. D., & Ostfeld, R. S. (2006). Effects of species diversity on disease risk. Ecology Letters, 9(4), 485-498](Keesing et al. - 2006 - Effects of species diversity on disease risk Effe.pdf)
+
+[Young, H. S., Dirzo, R., Helgen, K. M., McCauley, D. J., Billeter, S. A., Kosoy, M. Y., ... & Dittmar, K. (2014). Declines in large wildlife increase landscape-level prevalence of rodent-borne disease in Africa. Proceedings of the National Academy of Sciences, 111(19), 7036-7041](Young et al. - 2014 - Declines in large wildlife increase landscape-leve.pdf)
 
 ### Specialization & niche dynamics, Dr. Matt Forister    
   
-1. 
-2. 
-3. 
+[Leiby, N., & Marx, C. J. 2014. Metabolic erosion primarily through mutation accumulation, and not tradeoffs, drives limited evolution of substrate specificity in Escherichia coli. PLoS biology, 12(2), e1001789](Leiby and Marx - 2014 - Metabolic Erosion Primarily Through Mutation Accum.pdf)
+
+[Poisot, T., Bever, J. D., Nemri, A., Thrall, P. H., & Hochberg, M. E. 2011. A conceptual framework for the evolution of ecological specialisation. Ecology Letters, 14, 841-851](Poisot et al. - 2011 - A conceptual framework for the evolution of ecolog.pdf)
+
+[Konuma, J., Sota, T., & Chiba, S. (2013). A maladaptive intermediate form: a strong trade‐off revealed by hybrids between two forms of a snail‐feeding beetle. Ecology, 94(11), 2638-2644](Konuma et al. - 2013 - A maladaptive intermediate form a strong trade-of.pdf)
+ 
 
 ## Sep 19
 
 ### Population ecology, Dr. Kevin Shoemaker
 
-1. 
-2. 
-3. 
+[Turchin, P. (2001). Does population ecology have general laws?. Oikos, 94(1), 17-26](Turchin - 2001 - Does population ecology have general laws.pdf)
+
+[Hanski, I. (1998). Metapopulation dynamics. Nature, 396(6706), 41-49](Hanski - 1998 - Metapopulation dynamics.pdf)
+
+*Recommended but not required:*
+
+[Sibly, R. M., Barker, D., Denham, M. C., Hone, J., & Pagel, M. (2005). On the regulation of populations of mammals, birds, fish, and insects. Science, 309(5734), 607-610](Sibly et al. - 2005 - On the Regulation of Populations of Mammals, Birds.pdf)
+
+[Griffith, A. B., Salguero‐Gómez, R., Merow, C., & McMahon, S. (2016). Demography beyond the population. Journal of Ecology, 104(2), 271-280](Griffith et al. - 2016 - Demography beyond the population.pdf)
+
 
 ### Population genetics, Dr. Marjorie Matocq
   
-1. 
-2. 
-3. 
+[Wang, I. J., & Bradburd, G. S. (2014). Isolation by environment. Molecular Ecology, 23(23), 5649-5662](Wang and Bradburd - 2014 - Isolation by environment.pdf)
+
+[Marko, P. B., & Hart, M. W. (2011). The complex analytical landscape of gene flow inference. Trends in ecology & evolution, 26(9), 448-456](Marko and Hart - 2011 - The complex analytical landscape of gene flow infe.pdf)
 
 
 ## Sep 26
 
 ### Mathematical models for EECB, Dr. Paul Hurtado
 
-1. 
-2. 
-3. 
+[Ellner, S. P., & Guckenheimer, J. (2011). Dynamic models in biology. Princeton University Press. Chapter 1](Ellner and Guckenheimer - 2011 - Dynamic Models in Biology_Ch1.pdf) ([Ch. 9](Ellner and Guckenheimer - 2011 - Dynamic Models in Biology_Ch9.pdf) also recommended but not required).
+
+[Waddington, C. H. (1968). Towards a theoretical biology. Nature, 218(5141), 525-527.](Waddington - 1968 - Towards a theoretical biology.pdf)
+
+Recommended but not required:
+
+[Chowell, G., Viboud, C., Simonsen, L., Merler, S., & Vespignani, A. (2017). Perspectives on model forecasts of the 2014–2015 Ebola epidemic in West Africa: lessons and the way forward. BMC medicine, 15(1), 42.](Chowell et al. - 2017 - Perspectives on model forecasts of the 2014–2015 E.pdf)
+
 
 ### Landscape Ecology, Dr. Peter Weisberg
 
-  
-1. 
-2. 
-3. 
+[Turner, Monica G. 2005. Landscape ecology: what is the state of the science? Ann. Rev. Ecol. Evol. Syst. 36: 319 – 344.](Turner - 2005 - Landscape Ecology What Is the State of the Scienc.pdf)
 
+[Serra-Diaz, J.M., R.M. Scheller, A.D. Syphard and J. Franklin. 2015. Disturbance and climate refugia mediate tree range shifts during climate change. Landscape Ecology 30: 1039-1053.](Serra-Diaz et al. - 2015 - Disturbance and climate microrefugia mediate tree .pdf)
 
+*Recommended but not required:*
+[Fahrig, L. 2003. Effects of habitat fragmentation on biodiversity. Annu. Rev. Ecol. Evol. Syst. 34: 487-515.](Fahrig - 2003 - Effects of Habitat Fragmentation on Biodiversity.pdf)
+
+*Recommended but not required:*
+[Wiens, J.A. 1989. Spatial scaling in ecology. Functional Ecology 3: 385-397.](Wiens - 1989 - Spatial Scaling in Ecology.pdf)
 
 ## Oct 3
 
 ### Soil Ecology, Dr. Ben Sullivan
 
-1. 
-2. 
-3. 
+[Vitousek, P. M., & Reiners, W. A. (1975). Ecosystem succession and nutrient retention: a hypothesis. BioScience, 25(6), 376-381](Vitousek and Reiners - 1975 - Ecosystem Succession and Nutrient Retention A Hyp.pdf)
+
+[McGill, W. B., & Cole, C. V. (1981). Comparative aspects of cycling of organic C, N, S and P through soil organic matter. Geoderma, 26(4), 267-286](McGill and Cole - 1981 - Comparative aspects of cycling of organic C, N, S .pdf)
+
+[Wieder, W. R., Bonan, G. B., & Allison, S. D. (2013). Global soil carbon projections are improved by modelling microbial processes. Nature Climate Change, 3(10), 909-912](Wieder et al. - 2013 - Global soil carbon projections are improved by mod.pdf)
+
 
 ### Microbial Ecology, Dr. David Vuono
 
-1. 
-2. 
-3. 
+[Pace, N. R. (2009). Mapping the tree of life: progress and prospects. Microbiology and Molecular Biology Reviews, 73(4), 565-576.](Pace - 2009 - Mapping the Tree of Life Progress and Prospects.pdf)
+
+[Thompson, J. R., Pacocha, S., Pharino, C., Klepac-Ceraj, V., Hunt, D. E., Benoit, J., ... & Polz, M. F. (2005). Genotypic diversity within a natural coastal bacterioplankton population. Science, 307(5713), 1311-1313.](Thompson - 2005 - Genotypic Diversity Within a Natural Coastal Bacte.pdf)
+
+*Recommended but not required:*
+
+[Pepe-Ranney, C., Campbell, A. N., Koechli, C. N., Berthrong, S., & Buckley, D. H. (2016). Unearthing the ecology of soil microorganisms using a high resolution DNA-SIP approach to explore cellulose and xylose metabolism in soil. Frontiers in microbiology, 7.](Pepe-Ranney et al. - 2016 - Unearthing the Ecology of Soil Microorganisms Usin.pdf)
 
   
 ## Oct 10
 
 ### Ecoimmunology, Dr. Angela Smilanich
 
-1. 
-2. 
-3. 
+[Schulenburg, H., Kurtz, J., Moret, Y., & Siva-Jothy, M. T. (2009). Introduction. ecological immunology. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 364(1513), 3-14](Schulenburg et al. - 2009 - Introduction. Ecological immunology.pdf)
 
-### Physiological ecology, Dr. Jack Hayes
+[Pamminger, T., Treanor, D., & Hughes, W. O. (2016, January). Pleiotropic effects of juvenile hormone in ant queens and the escape from the reproduction–immunocompetence trade-off. In Proc. R. Soc. B (Vol. 283, No. 1822, p. 20152409). The Royal Society.](Pamminger et al. - 2016 - Pleiotropic effects of juvenile hormone in ant que.pdf)
+ 
+ 
+### Applied evolution, Dr. Beth Leger
+    
+[Schoener, T. W. (2011). The newest synthesis: understanding the interplay of evolutionary and ecological dynamics. science, 331(6016), 426-429.](Schoener - 2011 - The Newest Synthesis Understanding the Interplay .pdf)
 
-  
-1. 
-2. 
-3. 
+[Oduor, A. M. (2013). Evolutionary responses of native plant species to invasive plants: a review. New Phytologist, 200(4), 986-992.](Oduor - 2013 - Evolutionary responses of native plant species to .pdf)
+
 
 ## Oct 17
 
 ### Community ecology, Dr. Beth Pringle
 
-1. 
-2. 
-3. 
+[Vellend, M. 2016. Chapter 3: A brief history of ideas in community ecology. pp 20-35 in The Theory of Ecological Communities, Princeton University Press: Princeton.](VellendChapter3.pdf)
 
-### Applied evolution, Dr. Beth Leger
-    
-  
-1. 
-2. 
-3. 
+[Gotelli, N. J., G.R. Graves, C. Rahbek. 2010. Macroecological signals of species interactions in the Danish avifauna. PNAS 107: 5030-5035](Gotelli et al. - 2010 - Macroecological signals of species interactions in.pdf)
+
+*Recommended but not required:*
+[Sandel, B. 2015. Towards a taxonomy of spatial scale-dependence. Ecography 38: 358-369.](Sandel-2015-Ecography.pdf)
+
+
+### Physiological ecology, Dr. Jack Hayes
+
+[Huey, R. B., Kearney, M. R., Krockenberger, A., Holtum, J. A., Jess, M., & Williams, S. E. (2012). Predicting organismal vulnerability to climate warming: roles of behaviour, physiology and adaptation. Phil. Trans. R. Soc. B, 367(1596), 1665-1679.](Huey et al. - 2012 - Predicting organismal vulnerability to climate war.pdf)
+
+[Kearney, M., & Porter, W. (2009). Mechanistic niche modelling: combining physiological and spatial data to predict species’ ranges. Ecology letters, 12(4), 334-350.](Kearney and Porter - 2009 - Mechanistic niche modelling combining physiologic.pdf)
 
 
 ## Oct 24
 
 ### Phenotypic Plasticity, Dr. Jenny Ouyang
 
-1. 
-2. 
-3. 
+[Pigliucci M. 2005. Evolution of phenotypic plasticity: where are we going now? Trends in Ecology & Evolution, 20, 481-486.](Pigliucci - 2005 - Evolution of phenotypic plasticity where are we g.pdf)
+ 
+[Pigliucci M. "Phenotypic Plasticity." In. Evolution: The Extended Synthesis. Eds. Pigliucci and Mueller. 2010. Massachusetts Institute of Technology Press. pgs 355-378.](Pigliucci 2010 book chapter.pdf)
+ 
+[Charmantier A, Mccleery RH, Cole LR, Perrins C, Kruuk LEB, Sheldon BC (2008) Adaptive phenotypic plasticity in response to climate change in a wild bird population. Science, 320, 800-803.](Charmantier et al. - 2008 - Adaptive Phenotypic Plasticity in Response to Clim.pdf)
+
 
 ### Chemical Ecology, Dr. Lora Robinson
   
-1. 
-2. 
-3. 
+[Salazar, D., Jaramillo, A. & Marquis, R. J. 2016. The impact of plant chemical diversity on plant–herbivore interactions at the community level. Oecologia 181, 1199-1208](Salazar et al. - 2016 - The impact of plant chemical diversity on plant–he.pdf)
+
+[Raguso, R. A. et al. The raison d'être of chemical ecology. 2015. Ecology 96, 617-630](Raguso et al. - 2015 - The raison d'être of chemical ecology.pdf)
 
 
 ## Oct 31
 
 ### Species & speciation, Dr. Matt Forister
 
-### Paleoecology, Dr. Scott Mensing
-  
-1. 
-2. 
-3. 
+[Orr, H. A., & Presgraves, D. C. (2000). Speciation by postzygotic isolation: forces, genes and molecules. BioEssays, 22(12), 1085-1094.](Orr and Presgraves - 2000 - Speciation by postzygotic isolation forces, genes.pdf)
 
+[Rabosky, D.L. (2016). Reproductive isolation and the causes of speciation rate variation in nature. Biological Journal of the Linnean Society, 118(1), pp.13-25.](Rabosky - 2016 - Reproductive isolation and the causes of speciatio.pdf)
+
+*Recommended but not required:*
+
+[Mallet, J. (2008). Hybridization, ecological races and the nature of species: empirical evidence for the ease of speciation. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 363(1506), 2971-2986.](Mallet - 2008 - Hybridization, ecological races and the nature of .pdf)
+
+[Feder, J. L., Flaxman, S. M., Egan, S. P., Comeault, A. A., & Nosil, P. (2013). Geographic mode of speciation and genomic divergence. Annual Review of Ecology, Evolution, and Systematics, 44, 73-97.](Feder et al. - 2013 - Geographic Mode of Speciation and Genomic Divergen.pdf)
+
+
+### Paleoecology, Dr. Scott Mensing and Dr. Adam Csank
+  
+[Mensing, S. A., Tunno, I., Sagnotti, L., Florindo, F., Noble, P., Archer, C., ... & Piovesan, G. (2015). 2700 years of Mediterranean environmental change in central Italy: a synthesis of sedimentary and cultural records to interpret past impacts of climate on society. Quaternary Science Reviews, 116, 72-94.](Mensing et al. - 2015 - 2700 years of Mediterranean environmental change i.pdf)
+
+[Roberts, N. (2013). The Holocene: an environmental history. John Wiley & Sons. Ch. 2.](Roberts_1998_Ch2_Holocene.pdf)
+
+*Recommended but not required:*
+
+[Flower, Aquila; Gavin, Daniel G.; Heyerdahl, Emily K.; Parsons, Russell A.; and Cohn, Gregory M., "Western Spruce Budworm Outbreaks Did Not Increase Fire Risk over the Last Three Centuries: A Dendrochronological Analysis of Inter-Disturbance Synergism" (2014). Environmental Studies. 26. http://cedar.wwu.edu/envs_facpubs/26](Western Spruce Budworm Outbreaks Did Not Increase Fire Risk over.pdf)
+
+ 
 ## Nov 7
 
 ### Philosophy of Biology, Dr. Carlos Mariscal
 
-1. 
-2. 
-3. 
+**What is a Species?**     
+[Ereshefsky, M. (1992). Eliminative pluralism. Philosophy of Science, 59(4), 671-690.](Ereshefsky - 1992 - Eliminative Pluralism.pdf)
+*Optional*: [Mishler, B. D., & Brandon, R. N. (1987). Individuality, pluralism, and the phylogenetic species concept. Biology and Philosophy, 2(4), 397-414.](Mishler and Brandon - 1987 - Individuality, pluralism, and the phylogenetic spe.pdf)
+
+**The Extended Evolutionary Synthesis**    
+[Laland, K., Wray, G. A., & Hoekstra, H. E. (2014). Does evolutionary theory need a rethink?. Nature, 514(7521), 161.](Laland et al 2014.pdf)
+*Optional*: [Laland, K. N., Uller, T., Feldman, M. W., Sterelny, K., Müller, G. B., Moczek, A., ... & Odling-Smee, J. (2015, August). The extended evolutionary synthesis: its structure, assumptions and predictions. In Proc. R. Soc. B (Vol. 282, No. 1813, p. 20151019). The Royal Society.](Laland et al. - 2015 - The extended evolutionary synthesis its structure.pdf)
+*Optional*: [Booth, A., Mariscal, C., & Doolittle, W. F. (2016). The modern synthesis in the light of microbial genomics. Annual review of microbiology, 70, 279-297.](Booth et al. - 2016 - The Modern Synthesis in the Light of Microbial Gen.pdf)
+
+**Understanding Function in DNA**     
+[Graur, D., Zheng, Y., Price, N., Azevedo, R. B., Zufall, R. A., & Elhaik, E. (2013). On the immortality of television sets:“function” in the human genome according to the evolution-free gospel of ENCODE. Genome biology and evolution, 5(3), 578-590.](Graur et al. - 2013 - On the Immortality of Television Sets Function .pdf)
+*Optional*: [Doolittle, W. F., Brunet, T. D., Linquist, S., & Gregory, T. R. (2014). Distinguishing between “function” and “effect” in genome biology. Genome biology and evolution, 6(5), 1234-1237.](Doolittle et al. - 2014 - Distinguishing between Function and Effect in .pdf)
+*Optional*: [Graur, D., Zheng, Y., & Azevedo, R. B. (2015). An evolutionary classification of genomic function. Genome biology and evolution, 7(3), 642-645.](Graur et al. - 2015 - An Evolutionary Classification of Genomic Function.pdf) 
 
 ### Genomic variation & architecture, Dr. Tom Parchman
   
-1. 
-2. 
-3. 
+[Ellegren, H., Smeds, L., Burri, R., Olason, P. I., Backström, N., Kawakami, T., ... & Uebbing, S. (2012). The genomic landscape of species divergence in Ficedula flycatchers. Nature, 491(7426), 756-760.](Ellegren et al. - 2012 - The genomic landscape of species divergence in Fic.pdf)
+
+[Chapter 2 from: Lynch, M. (2007). The origins of genome architecture (Vol. 98). Sunderland: Sinauer Associates.](lynch_chap2.pdf)
+
+*Recommended but not required:*
+[Kawakami, T., Smeds, L., Backström, N., Husby, A., Qvarnström, A., Mugal, C. F., ... & Ellegren, H. (2014). A high‐density linkage map enables a second‐generation collared flycatcher genome assembly and reveals the patterns of avian recombination rate variation and chromosomal evolution. Molecular ecology, 23(16), 4035-4058.](Kawakami et al. - 2014 - A high-density linkage map enables a second-genera.pdf)
+ 
 
 ## Nov 14
 
 ### Comparative genomics & gene evolution, Dr. David Alvarez-Ponce   
 
-1. 
-2. 
-3. 
+[Cork, J. M., & Purugganan, M. D. (2004). The evolution of molecular genetic pathways and networks. Bioessays, 26(5), 479-484.](Cork and Purugganan - 2004 - The evolution of molecular genetic pathways and ne.pdf)
+
+[Alvarez-Ponce, D., & McInerney, J. O. (2011). The human genome retains relics of its prokaryotic ancestry: human genes of archaebacterial and eubacterial origin exhibit remarkable differences. Genome biology and evolution, 3, 782-790.](Alvarez-Ponce and McInerney - 2011 - The Human Genome Retains Relics of Its Prokaryotic.pdf)
+
 
 ### Ecological & evolutionary epigenetics, Dr. David Zeh
   
-1. 
-2. 
-3. 
+[Bonilla MM, Zeh JA, Zeh DW. 2016. An epigenetic resolution of the lek paradox. BioEssays 38, 355-366.](Bonilla et al. - 2016 - An epigenetic resolution of the lek paradox.pdf)
+ 
+[Zeh DW, Zeh JA, Ishida Y. 2009. Transposable elements and an epigenetic basis for punctuated equilibria. Bioessays, 31, 715-726.](Zeh et al. - 2009 - Transposable elements and an epigenetic basis for .pdf)
+
 
 ## Nov 21
 
 ### Conservation Biology and Ecosystem Management, Dr. Sudeep Chandra
 
-1. 
-2. 
-3. 
+*Strongly recommended:* 
+
+[Biodiversity, Scientists, and Religious Communities: Conservation Through Collaboration (AAAS news article)](AAAS Biodiversity Scientists, and Religious Communities Conservation Through Collaboration.pdf)
+
+[Schaefer, J. (2017). New Hope for the Oceans: Engaging Faith-Based Communities in Marine Conservation. Frontiers in Marine Science, 4, 62.](Schaefer - 2017 - New Hope for the Oceans Engaging Faith-Based Comm.pdf)
+
+[Bhagwat, S., & Palmer, M. (2009). Conservation: the world's religions can help. Nature, 461(7260), 37-37.](Bhagwat and Palmer - 2009 - Conservation the world's religions can help.pdf)
+
+*Additional recommended reading:*
+
+[Rolston III, H. (2010). Saving Creation: Faith Shaping Environmental Policy. Harv. L. & Pol'y Rev., 4, 121.](Rolston III - 2010 - Saving Creation Faith Shaping Environmental Polic.pdf)
+
 
 ### Phylogenetics, Dr. Guy Hoelzer
     
-  
-1. 
-2. 
-3. 
+[Degnan, J. H., & Rosenberg, N. A. 2009. Gene tree discordance, phylogenetic inference and the multispecies coalescent. Trends in ecology & evolution, 24(6), 332-340](Degnan and Rosenberg - 2009 - Gene tree discordance, phylogenetic inference and .pdf)      
+
+[Felsenstein, J. 1988. Phylogenies from molecular sequences: inference and reliability. Annual review of genetics, 22(1), 521-565](Felsenstein - 1988 - Phylogenies from molecular sequences inference an.pdf)
+
+*Optional:*
+[Huelsenbeck, J. P., & Rannala, B. 1997. Phylogenetic methods come of age: testing hypotheses in an evolutionary context. Science, 276(5310), 227-232](Huelsenbeck and Rannala - 1997 - Phylogenetic methods come of age testing hypothes.pdf)
 
 ## Nov 28
 
 ### Global Change and Conservation, Dr. Ken Nussear
   
-1. 
-2. 
-3. 
+[Araújo, M. B., & New, M. (2007). Ensemble forecasting of species distributions. Trends in ecology & evolution, 22(1), 42-47.](Araujo and New - 2007 - Ensemble forecasting of species distributions.pdf)
+
+[Kearney, M. (2006). Habitat, environment and niche: what are we modelling?. Oikos, 115(1), 186-191.](Kearney - 2006 - Habitat, environment and niche what are we modell.pdf)
+
+[Buckley, L. B., Urban, M. C., Angilletta, M. J., Crozier, L. G., Rissler, L. J., & Sears, M. W. (2010). Can mechanism inform species’ distribution models?. Ecology letters, 13(8), 1041-1054.](Buckley et al. - 2010 - Can mechanism inform species’ distribution models.pdf)
+ 
 
 ## Dec 5
 
@@ -219,15 +296,15 @@ Recommended but not required:
 
 ## Dec 12
 ### Final exam
-noon-3pm      
-location TBA     
-closed book; 10 short essays, ~300 words each, with questions chosen from a pool constructed as follows: from each of the 25 topics, I will pick 2 questions (so you'll see a list of 50 questions); I'll divide that list roughly into three parts (beginning, middle and end of the semester), and you'll have to pick 3 questions from the first, 4 questions from the middle and 3 questions from the end. 
+noon-3pm, MS 227       
+
+Closed book (except for one note-sheet); 8 short essays, ~300 words each (max 600 words), with questions chosen from a pool constructed as follows: from each of the 25 topics, I will pick 1-2 questions (so you'll see a list of ca. 40 questions); I'll divide that list roughly into three parts (beginning, middle and end of the semester), and you'll have to pick 3 questions from the first, 3 questions from the middle and 2 questions from the end. 
 
 In other words, you have a ton of choice, but you also can't completely ignore some section of the course! 
 
 Although the exam is "closed book" and closed-internet, you can bring one sheet (8.5 x 11) of written notes, with writing on front and back.
 
-
+I will email you the exam via webcampus at the start of the exam period. Please type your answers directly underneath the questions that you have chosen, and (when you’re all finished) please delete the questions that you have not answered.
 
 
 
